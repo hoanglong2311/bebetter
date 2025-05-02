@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Pages on My Knowledge Blog</title>
+        <link>https://example.com/page/</link>
+        <description>Recent content in Pages on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 31 Mar 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Archives</title>
+        <link>https://example.com/page/archives/</link>
+        <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/page/archives/</guid>
+        <description>&lt;h2 id=&#34;archives&#34;&gt;Archives
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Blog Guide</title>
+        <link>https://example.com/blog-guide/</link>
+        <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/blog-guide/</guid>
+        <description>&lt;h2 id=&#34;blog-guide&#34;&gt;Blog Guide
+&lt;/h2&gt;&lt;h1 id=&#34;blog-management-guide&#34;&gt;Blog Management Guide
+&lt;/h1&gt;&lt;p&gt;This guide will help you understand how to manage and write content for this blog. Whether you&amp;rsquo;re creating new posts, configuring the site, or troubleshooting issues, you&amp;rsquo;ll find the information you need here.&lt;/p&gt;
+&lt;h2 id=&#34;quick-start&#34;&gt;Quick Start
+&lt;/h2&gt;&lt;h3 id=&#34;initial-setup&#34;&gt;Initial Setup
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Make sure Hugo is installed&lt;/li&gt;
+&lt;li&gt;Clone the theme: &lt;code&gt;themes/hugo-theme-stack&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Create basic structure:
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;mkdir -p content/&lt;span style=&#34;color:#f92672&#34;&gt;{&lt;/span&gt;post,page,categories&lt;span style=&#34;color:#f92672&#34;&gt;}&lt;/span&gt; static/img
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;running-the-blog&#34;&gt;Running the Blog
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Preview locally: &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Build for production: &lt;code&gt;hugo&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Clean build cache: &lt;code&gt;hugo --gc&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;creating-new-posts&#34;&gt;Creating New Posts
+&lt;/h2&gt;&lt;h3 id=&#34;method-1-using-hugo-command-recommended&#34;&gt;Method 1: Using Hugo Command (Recommended)
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;hugo new post/your-post-title.md
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;method-2-manual-creation&#34;&gt;Method 2: Manual Creation
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Create a new &lt;code&gt;.md&lt;/code&gt; file in &lt;code&gt;content/post/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use this template:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;title: &amp;#34;Your Post Title&amp;#34;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;date: YYYY-MM-DD
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;lastmod: YYYY-MM-DD  # Optional
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;image: img/your-image.jpg
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;categories:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Category1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Category2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;tags:
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Tag1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Tag2
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;draft: false  # Set to true for unpublished posts
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;description: &amp;#34;Brief description&amp;#34;  # Optional
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;---
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Your content here...
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;writing-tips&#34;&gt;Writing Tips
+&lt;/h2&gt;&lt;h3 id=&#34;content-organization&#34;&gt;Content Organization
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Use clear headings (##, ###)&lt;/li&gt;
+&lt;li&gt;Include code blocks with syntax highlighting&lt;/li&gt;
+&lt;li&gt;Add relevant images&lt;/li&gt;
+&lt;li&gt;Keep paragraphs short&lt;/li&gt;
+&lt;li&gt;Use lists for better readability&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;markdown-formatting&#34;&gt;Markdown Formatting
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;# Heading 1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;## Heading 2
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;### Heading 3
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-weight:bold&#34;&gt;**Bold text**&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;*Italic text*&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;-&lt;/span&gt; Bullet point
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;1.&lt;/span&gt; Numbered list
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#66d9ef&#34;&gt;&amp;gt; &lt;/span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;Blockquote
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;font-style:italic&#34;&gt;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#e6db74&#34;&gt;`Inline code`&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;```language
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;Code block
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;adding-images-and-links&#34;&gt;Adding Images and Links
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;[&lt;span style=&#34;color:#f92672&#34;&gt;Link text&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;https://example.com&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;![&lt;span style=&#34;color:#f92672&#34;&gt;Image alt text&lt;/span&gt;](&lt;span style=&#34;color:#a6e22e&#34;&gt;img/image.jpg&lt;/span&gt;)
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h3 id=&#34;creating-tables&#34;&gt;Creating Tables
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-markdown&#34; data-lang=&#34;markdown&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Header 1 | Header 2 |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|----------|----------|
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Cell 1   | Cell 2   |
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;| Cell 3   | Cell 4   |
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;1-images&#34;&gt;1. Images
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Place in &lt;code&gt;static/img/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Use descriptive filenames&lt;/li&gt;
+&lt;li&gt;Optimize before adding&lt;/li&gt;
+&lt;li&gt;Recommended formats: JPG, PNG, WebP&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;2-categories-and-tags&#34;&gt;2. Categories and Tags
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Categories: Keep broad (e.g., Technology, Life, Learning)&lt;/li&gt;
+&lt;li&gt;Tags: Use for specific topics&lt;/li&gt;
+&lt;li&gt;Be consistent with naming&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;3-draft-management&#34;&gt;3. Draft Management
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Use &lt;code&gt;draft: true&lt;/code&gt; for unpublished posts&lt;/li&gt;
+&lt;li&gt;Preview with &lt;code&gt;hugo server -D&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Set to &lt;code&gt;false&lt;/code&gt; when ready to publish&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;troubleshooting&#34;&gt;Troubleshooting
+&lt;/h2&gt;&lt;h3 id=&#34;common-issues&#34;&gt;Common Issues
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Images not showing&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check path in front matter&lt;/li&gt;
+&lt;li&gt;Ensure image is in &lt;code&gt;static/img/&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;Verify file extension&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Changes not visible&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Clear browser cache&lt;/li&gt;
+&lt;li&gt;Restart Hugo server&lt;/li&gt;
+&lt;li&gt;Check for typos in front matter&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Build errors&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Check YAML syntax&lt;/li&gt;
+&lt;li&gt;Verify file paths&lt;/li&gt;
+&lt;li&gt;Ensure theme is properly installed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;resources&#34;&gt;Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://gohugo.io/documentation/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Hugo Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://stack.jimmycai.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Stack Theme Documentation&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://www.markdownguide.org/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;Markdown Guide&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>All Content</title>
+        <link>https://example.com/page/all-content/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/page/all-content/</guid>
+        <description>&lt;h2 id=&#34;all-content&#34;&gt;All Content
+&lt;/h2&gt;&lt;p&gt;This page lists all content organized by category.&lt;/p&gt;
+&lt;h2 id=&#34;maps-of-content&#34;&gt;Maps of Content
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;technologies&#34;&gt;Technologies
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;interview-prep&#34;&gt;Interview Prep
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;projects&#34;&gt;Projects
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+&lt;h2 id=&#34;cheat-sheets&#34;&gt;Cheat Sheets
+&lt;/h2&gt;
+&lt;ul&gt;
+  
+    &lt;li&gt;No posts in this category yet.&lt;/li&gt;
+  
+&lt;/ul&gt;
+
+</description>
+        </item>
+        <item>
+        <title>Search</title>
+        <link>https://example.com/page/search/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/page/search/</guid>
+        <description>&lt;h2 id=&#34;search&#34;&gt;Search
+&lt;/h2&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

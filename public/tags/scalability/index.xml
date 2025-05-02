@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Scalability on My Knowledge Blog</title>
+        <link>https://example.com/tags/scalability/</link>
+        <description>Recent content in Scalability on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 02 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/scalability/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>System Design Interview: Scaling a Notification Service</title>
+        <link>https://example.com/post/system-design-notification-service/</link>
+        <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/system-design-notification-service/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=68422" alt="Featured image of post System Design Interview: Scaling a Notification Service" /&gt;&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement
+&lt;/h2&gt;&lt;p&gt;Design a notification service that can send millions of notifications (push, SMS, email) to users daily with high reliability and low latency.&lt;/p&gt;
+&lt;h2 id=&#34;requirements-analysis&#34;&gt;Requirements Analysis
+&lt;/h2&gt;&lt;h3 id=&#34;functional-requirements&#34;&gt;Functional Requirements
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Support multiple notification types (push, SMS, email)&lt;/li&gt;
+&lt;li&gt;Support templating for personalized messages&lt;/li&gt;
+&lt;li&gt;Allow scheduling of notifications&lt;/li&gt;
+&lt;li&gt;Support batch and single notifications&lt;/li&gt;
+&lt;li&gt;Track delivery status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;non-functional-requirements&#34;&gt;Non-Functional Requirements
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;High throughput (millions per day)&lt;/li&gt;
+&lt;li&gt;Low latency for time-sensitive notifications&lt;/li&gt;
+&lt;li&gt;High availability (99.9%+)&lt;/li&gt;
+&lt;li&gt;Failover mechanisms for provider outages&lt;/li&gt;
+&lt;li&gt;Message ordering when needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system-architecture&#34;&gt;System Architecture
+&lt;/h2&gt;&lt;h3 id=&#34;high-level-components&#34;&gt;High-Level Components
+&lt;/h3&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Client Apps] → [API Gateway]
+                    ↓
+   [Notification Service API]
+       ↓          ↓           ↓
+[Push Service][SMS Service][Email Service]
+       ↓          ↓           ↓
+[Push Providers][SMS Providers][Email Providers]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;key-components&#34;&gt;Key Components
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;API Gateway&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rate limiting, authentication, load balancing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Notification Service API&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Request validation&lt;/li&gt;
+&lt;li&gt;Notification routing&lt;/li&gt;
+&lt;li&gt;Template rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Channel-specific Services&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provider selection and fallback&lt;/li&gt;
+&lt;li&gt;Delivery optimization&lt;/li&gt;
+&lt;li&gt;Channel-specific formatting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Queue&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kafka or RabbitMQ for guaranteed delivery&lt;/li&gt;
+&lt;li&gt;Separate queues per channel and priority&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;data-model&#34;&gt;Data Model
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Notification {
+  id: UUID
+  user_id: UUID
+  type: ENUM(PUSH, SMS, EMAIL)
+  template_id: UUID
+  template_data: JSON
+  status: ENUM(QUEUED, SENT, DELIVERED, FAILED)
+  created_at: Timestamp
+  scheduled_for: Timestamp
+  completed_at: Timestamp
+}
+
+Template {
+  id: UUID
+  name: String
+  content: String
+  variables: JSON
+  channel: ENUM(PUSH, SMS, EMAIL)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;scaling-considerations&#34;&gt;Scaling Considerations
+&lt;/h2&gt;&lt;h3 id=&#34;horizontal-scaling&#34;&gt;Horizontal Scaling
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Stateless services for easy scaling&lt;/li&gt;
+&lt;li&gt;Sharding by user_id or region&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rate-limiting&#34;&gt;Rate Limiting
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Per-user rate limits&lt;/li&gt;
+&lt;li&gt;Global rate limiting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;idempotency&#34;&gt;Idempotency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Idempotency keys for safe retries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;failure-handling&#34;&gt;Failure Handling
+&lt;/h2&gt;&lt;h3 id=&#34;provider-outages&#34;&gt;Provider Outages
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Multiple provider support per channel&lt;/li&gt;
+&lt;li&gt;Circuit breakers for failing providers&lt;/li&gt;
+&lt;li&gt;Retry mechanisms with exponential backoff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-persistence&#34;&gt;Message Persistence
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Store messages in durable storage before processing&lt;/li&gt;
+&lt;li&gt;Dead letter queues for failed deliveries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;monitoring-and-alerting&#34;&gt;Monitoring and Alerting
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Track delivery rates, latency, error rates&lt;/li&gt;
+&lt;li&gt;Alert on abnormal failure rates&lt;/li&gt;
+&lt;li&gt;Monitor queue depths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cost-optimization&#34;&gt;Cost Optimization
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Batch notifications where possible&lt;/li&gt;
+&lt;li&gt;Intelligent provider selection based on cost&lt;/li&gt;
+&lt;li&gt;Time-shifting non-urgent notifications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

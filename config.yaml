@@ -1,0 +1,102 @@
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+baseURL: "https://example.com/"
+languageCode: "en-us"
+title: "My Knowledge Blog"
+theme: hugo-theme-stack
+
+taxonomies:
+  category: categories
+  tag: tags
+  series: series
+
+params:
+  mainSections:
+    - post
+  featuredImageField: image
+  rssFullContent: true
+  favicon: "favicon.ico"
+
+  sidebar:
+    emoji: 👋
+    subtitle: "Sharing what I learn"
+    avatar:
+      enabled: true
+      local: true
+      src: "img/avatar.jpg"
+
+  footer:
+    since: 2024
+
+  article:
+    math: false
+    toc: true
+    readingTime: true
+
+  comments:
+    enabled: false
+
+  widgets:
+    homepage:
+      - type: categories
+        params:
+          limit: 10
+
+  socialIcons:
+    - name: github
+      url: "https://github.com/yourusername"
+
+menu:
+  main:
+    - identifier: home
+      name: Home
+      url: /
+      weight: -100
+      params:
+        newTab: false
+        icon: home
+    - identifier: about
+      name: About
+      url: /about
+      weight: -90
+      params:
+        newTab: false
+        icon: user
+    - identifier: blog-guide
+      name: Blog Guide
+      url: /blog-guide
+      weight: -80
+      params:
+        newTab: false
+        icon: messages
+    - identifier: mocs
+      name: "Maps of Content"
+      url: /categories/maps-of-content
+      weight: -70
+      params:
+        newTab: false
+        icon: categories
+    - identifier: core-concepts
+      name: "Core Concepts"
+      url: /categories/core-concepts
+      weight: -60
+      params:
+        newTab: false
+        icon: messages
+    - identifier: technologies
+      name: "Technologies"
+      url: /categories/technologies
+      weight: -50
+      params:
+        newTab: false
+        icon: infinity
+    - identifier: interview-prep
+      name: "Interview Prep"
+      url: /categories/interview-prep
+      weight: -40
+      params:
+        newTab: false
+        icon: hash

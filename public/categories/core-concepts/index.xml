@@ -1,0 +1,916 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Core Concepts on My Knowledge Blog</title>
+        <link>https://example.com/categories/core-concepts/</link>
+        <description>Recent content in Core Concepts on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/core-concepts/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Event Driven Architect</title>
+        <link>https://example.com/post/index-event-driven-architecture/</link>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-event-driven-architecture/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1741850820097-19b16e20c409?q=80&amp;w=2667&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Event Driven Architect" /&gt;&lt;h2 id=&#34;related-content&#34;&gt;Related Content
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/home/&#34; &gt;Home&lt;/a&gt;: Mentions event-driven architecture as a core concept.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/core-concepts-moc/&#34; &gt;Core Concepts&lt;/a&gt;: Map of Content for core concepts, including event-driven architecture.&lt;/li&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/event-sourcing/&#34; &gt;Event Sourcing&lt;/a&gt;: Information about event sourcing.&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Consistency Models</title>
+        <link>https://example.com/post/consistency-models/</link>
+        <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/consistency-models/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1741851374721-a546dc41561a?q=80&amp;w=3870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Consistency Models" /&gt;&lt;h1 id=&#34;consistency-models&#34;&gt;Consistency Models
+&lt;/h1&gt;&lt;p&gt;Consistency models are crucial in distributed systems as they define the rules for how data is read and written across the system. Understanding these models helps in designing systems that meet specific consistency requirements.&lt;/p&gt;
+&lt;h2 id=&#34;types-of-consistency-models&#34;&gt;Types of Consistency Models
+&lt;/h2&gt;&lt;h3 id=&#34;strong-consistency&#34;&gt;Strong Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Guarantees that once a write completes, all subsequent reads will return the latest written value.&lt;/li&gt;
+&lt;li&gt;Suitable for systems where accuracy is critical, such as financial systems.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;eventual-consistency&#34;&gt;Eventual Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Ensures that if no new updates are made to a given piece of data, eventually all accesses to that data will return the last updated value.&lt;/li&gt;
+&lt;li&gt;Commonly used in systems where availability is prioritized over immediate consistency, like DNS.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;causal-consistency&#34;&gt;Causal Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Ensures that operations that are causally related are seen by all processes in the same order.&lt;/li&gt;
+&lt;li&gt;Useful in collaborative applications where the order of operations matters.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;read-your-writes-consistency&#34;&gt;Read-Your-Writes Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Guarantees that once a process has written a value, it will always read that value or a more recent one.&lt;/li&gt;
+&lt;li&gt;Important for user sessions where users expect to see their updates immediately.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;session-consistency&#34;&gt;Session Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Provides consistency guarantees within a session, ensuring that all operations within a session see a consistent view of the data.&lt;/li&gt;
+&lt;li&gt;Often used in web applications to maintain a consistent user experience.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monotonic-reads-consistency&#34;&gt;Monotonic Reads Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Guarantees that if a process has seen a particular value for a data item, it will never see an older value in subsequent reads.&lt;/li&gt;
+&lt;li&gt;Helps in scenarios where users expect to see progressively newer data.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monotonic-writes-consistency&#34;&gt;Monotonic Writes Consistency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Ensures that write operations are applied in the order they were issued.&lt;/li&gt;
+&lt;li&gt;Critical for maintaining the order of operations in systems like version control.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;conclusion&#34;&gt;Conclusion
+&lt;/h2&gt;&lt;p&gt;Choosing the right consistency model depends on the specific requirements of the system, such as the need for availability, partition tolerance, and latency. Understanding these models allows architects to design systems that balance these trade-offs effectively.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Index CQRS</title>
+        <link>https://example.com/post/cqrs/</link>
+        <pubDate>Mon, 24 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/cqrs/</guid>
+        <description>&lt;img src="https://plus.unsplash.com/premium_photo-1682617327937-7cb60ddf07a4?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Index CQRS" /&gt;&lt;h2 id=&#34;index-cqrs&#34;&gt;Index CQRS
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>CAP Theorem</title>
+        <link>https://example.com/post/cap-theorem/</link>
+        <pubDate>Sun, 02 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/cap-theorem/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=67897" alt="Featured image of post CAP Theorem" /&gt;&lt;h1 id=&#34;cap-theorem&#34;&gt;CAP Theorem
+&lt;/h1&gt;&lt;p&gt;The CAP theorem is a fundamental principle in distributed systems that states it is impossible for a distributed system to simultaneously provide more than two out of three guarantees:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Consistency (C)&lt;/strong&gt;: All nodes see the same data at the same time&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability (A)&lt;/strong&gt;: Every request receives a response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition Tolerance (P)&lt;/strong&gt;: The system continues to operate despite network partitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;understanding-the-trade-offs&#34;&gt;Understanding the Trade-offs
+&lt;/h2&gt;&lt;h3 id=&#34;ca-systems-sacrificing-partition-tolerance&#34;&gt;CA Systems (Sacrificing Partition Tolerance)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Traditional RDBMS (single node)&lt;/li&gt;
+&lt;li&gt;Not realistic for distributed systems&lt;/li&gt;
+&lt;li&gt;Example: PostgreSQL in single-node mode&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cp-systems-sacrificing-availability&#34;&gt;CP Systems (Sacrificing Availability)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Systems that prioritize consistency over availability&lt;/li&gt;
+&lt;li&gt;Will become unavailable during partitions&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;MongoDB (in strong consistency mode)&lt;/li&gt;
+&lt;li&gt;Apache HBase&lt;/li&gt;
+&lt;li&gt;Redis (in cluster mode with sync replication)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ap-systems-sacrificing-consistency&#34;&gt;AP Systems (Sacrificing Consistency)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Systems that prioritize availability over consistency&lt;/li&gt;
+&lt;li&gt;May return stale/inconsistent data during partitions&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Apache Cassandra&lt;/li&gt;
+&lt;li&gt;Amazon DynamoDB&lt;/li&gt;
+&lt;li&gt;Redis (in cluster mode with async replication)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;practical-implications&#34;&gt;Practical Implications
+&lt;/h2&gt;&lt;h3 id=&#34;when-to-choose-cp&#34;&gt;When to Choose CP
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Financial transactions&lt;/li&gt;
+&lt;li&gt;Inventory management&lt;/li&gt;
+&lt;li&gt;User authentication&lt;/li&gt;
+&lt;li&gt;Any system where consistency is critical&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;when-to-choose-ap&#34;&gt;When to Choose AP
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Content delivery&lt;/li&gt;
+&lt;li&gt;Social media feeds&lt;/li&gt;
+&lt;li&gt;Product catalogs&lt;/li&gt;
+&lt;li&gt;Systems that can tolerate eventual consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;real-world-examples&#34;&gt;Real-world Examples
+&lt;/h2&gt;&lt;h3 id=&#34;in-our-systems&#34;&gt;In Our Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Redis Cache Layer]] - CP configuration for session management&lt;/li&gt;
+&lt;li&gt;[[Cassandra Data Modeling]] - AP configuration for content storage&lt;/li&gt;
+&lt;li&gt;Related: [[101b-Consistency Models]] for detailed consistency patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;Understand your use case requirements&lt;/li&gt;
+&lt;li&gt;Consider the network environment&lt;/li&gt;
+&lt;li&gt;Plan for failure scenarios&lt;/li&gt;
+&lt;li&gt;Implement appropriate monitoring&lt;/li&gt;
+&lt;li&gt;Document consistency guarantees&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-concepts&#34;&gt;Related Concepts
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[101b-Consistency Models]] - Different types of consistency&lt;/li&gt;
+&lt;li&gt;[[101c-Partitioning and Sharding]] - Data distribution strategies&lt;/li&gt;
+&lt;li&gt;[[Handling Cassandra Failures]] - Real-world partition handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Designing Data-Intensive Applications&amp;rdquo; by Martin Kleppmann&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;CAP Twelve Years Later: How the &amp;lsquo;Rules&amp;rsquo; Have Changed&amp;rdquo;&lt;/li&gt;
+&lt;li&gt;[[Distributed Systems Fundamentals]] for more core concepts&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Message Brokers</title>
+        <link>https://example.com/post/message-brokers/</link>
+        <pubDate>Thu, 27 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/message-brokers/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1606560114612-237307522d27?q=80&amp;w=1587&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Message Brokers" /&gt;</description>
+        </item>
+        <item>
+        <title>Core Concepts MOC</title>
+        <link>https://example.com/post/core-concepts-moc/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/core-concepts-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=70734" alt="Featured image of post Core Concepts MOC" /&gt;&lt;h1 id=&#34;core-concepts-moc&#34;&gt;Core Concepts MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) serves as a central hub for fundamental technical concepts in distributed systems, microservices, and event-driven architecture.&lt;/p&gt;
+&lt;h2 id=&#34;distributed-systems&#34;&gt;Distributed Systems
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[CAP Theorem]] - Understanding the trade-offs between Consistency, Availability, and Partition Tolerance&lt;/li&gt;
+&lt;li&gt;[[Consistency Models]] - Strong, eventual, and causal consistency&lt;/li&gt;
+&lt;li&gt;[[Partitioning and Sharding]] - Strategies for distributing data across multiple nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;microservices-architecture&#34;&gt;Microservices Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Service Discovery]] - How services find and communicate with each other&lt;/li&gt;
+&lt;li&gt;[[API Gateways]] - Central entry point for client applications&lt;/li&gt;
+&lt;li&gt;[[Circuit Breakers]] - Handling failures gracefully in distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;event-driven-architecture&#34;&gt;Event-Driven Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Event Sourcing]] - Using events as the source of truth&lt;/li&gt;
+&lt;li&gt;[[CQRS]] - Command Query Responsibility Segregation&lt;/li&gt;
+&lt;li&gt;[[Message Brokers]] - Understanding message queues and pub/sub systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-concepts-by-topic&#34;&gt;Key Concepts by Topic
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-systems-fundamentals&#34;&gt;Distributed Systems Fundamentals
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consensus Algorithms&lt;/li&gt;
+&lt;li&gt;Distributed Transactions&lt;/li&gt;
+&lt;li&gt;Replication Strategies&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Clock Synchronization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microservices-patterns&#34;&gt;Microservices Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service Mesh&lt;/li&gt;
+&lt;li&gt;Backend for Frontend (BFF)&lt;/li&gt;
+&lt;li&gt;Bulkhead Pattern&lt;/li&gt;
+&lt;li&gt;Sidecar Pattern&lt;/li&gt;
+&lt;li&gt;Database per Service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;event-driven-patterns&#34;&gt;Event-Driven Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Event-Driven Integration&lt;/li&gt;
+&lt;li&gt;Event Streaming&lt;/li&gt;
+&lt;li&gt;Event Sourcing&lt;/li&gt;
+&lt;li&gt;Saga Pattern&lt;/li&gt;
+&lt;li&gt;Outbox Pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[020-Technologies MOC]] - Specific technologies implementing these concepts&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Code examples and implementations&lt;/li&gt;
+&lt;li&gt;[[040-Projects MOC]] - Projects utilizing these concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-and-references&#34;&gt;Resources and References
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Distributed Systems by Martin Kleppmann&lt;/li&gt;
+&lt;li&gt;Building Microservices by Sam Newman&lt;/li&gt;
+&lt;li&gt;Designing Data-Intensive Applications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>API Gateways</title>
+        <link>https://example.com/post/api-gateways/</link>
+        <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/api-gateways/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=27061" alt="Featured image of post API Gateways" /&gt;&lt;h1 id=&#34;api-gateways&#34;&gt;API Gateways
+&lt;/h1&gt;&lt;p&gt;API Gateways serve as the entry point for client applications in a microservices architecture, handling routing, aggregation, and cross-cutting concerns.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;gateway-responsibilities&#34;&gt;Gateway Responsibilities
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Request Routing&lt;/li&gt;
+&lt;li&gt;API Composition&lt;/li&gt;
+&lt;li&gt;Protocol Translation&lt;/li&gt;
+&lt;li&gt;Authentication/Authorization&lt;/li&gt;
+&lt;li&gt;Rate Limiting&lt;/li&gt;
+&lt;li&gt;Request/Response Transformation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gateway-patterns&#34;&gt;Gateway Patterns
+&lt;/h3&gt;&lt;h4 id=&#34;backend-for-frontend-bff&#34;&gt;Backend for Frontend (BFF)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Client-specific gateways&lt;/li&gt;
+&lt;li&gt;Tailored responses&lt;/li&gt;
+&lt;li&gt;Optimized communication&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Mobile BFF&lt;/li&gt;
+&lt;li&gt;Web BFF&lt;/li&gt;
+&lt;li&gt;Third-party BFF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;aggregation-gateway&#34;&gt;Aggregation Gateway
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Combines multiple service calls&lt;/li&gt;
+&lt;li&gt;Response composition&lt;/li&gt;
+&lt;li&gt;Parallel request handling&lt;/li&gt;
+&lt;li&gt;Request orchestration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-approaches&#34;&gt;Implementation Approaches
+&lt;/h2&gt;&lt;h3 id=&#34;traditional-api-gateway&#34;&gt;Traditional API Gateway
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Kong&lt;/li&gt;
+&lt;li&gt;Amazon API Gateway&lt;/li&gt;
+&lt;li&gt;Azure API Management&lt;/li&gt;
+&lt;li&gt;Nginx with custom modules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;service-mesh-gateway&#34;&gt;Service Mesh Gateway
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Istio Ingress Gateway&lt;/li&gt;
+&lt;li&gt;Linkerd Gateway&lt;/li&gt;
+&lt;li&gt;AWS App Mesh&lt;/li&gt;
+&lt;li&gt;Integration with [[102a-Service Discovery]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;custom-gateway-solutions&#34;&gt;Custom Gateway Solutions
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Spring Cloud Gateway&lt;/li&gt;
+&lt;li&gt;Netflix Zuul&lt;/li&gt;
+&lt;li&gt;Custom implementations&lt;/li&gt;
+&lt;li&gt;Framework selection criteria&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-features&#34;&gt;Common Features
+&lt;/h2&gt;&lt;h3 id=&#34;security&#34;&gt;Security
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Authorization&lt;/li&gt;
+&lt;li&gt;API Keys&lt;/li&gt;
+&lt;li&gt;OAuth/OIDC Integration&lt;/li&gt;
+&lt;li&gt;SSL/TLS Termination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;traffic-management&#34;&gt;Traffic Management
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Load Balancing&lt;/li&gt;
+&lt;li&gt;Circuit Breaking&lt;/li&gt;
+&lt;li&gt;Rate Limiting&lt;/li&gt;
+&lt;li&gt;Request Throttling&lt;/li&gt;
+&lt;li&gt;Related: [[102c-Circuit Breakers]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring-and-analytics&#34;&gt;Monitoring and Analytics
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Request Logging&lt;/li&gt;
+&lt;li&gt;Performance Metrics&lt;/li&gt;
+&lt;li&gt;Error Tracking&lt;/li&gt;
+&lt;li&gt;Usage Analytics&lt;/li&gt;
+&lt;li&gt;SLA Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;design-considerations&#34;&gt;Design Considerations
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Scalability&lt;/li&gt;
+&lt;li&gt;High Availability&lt;/li&gt;
+&lt;li&gt;Error Handling&lt;/li&gt;
+&lt;li&gt;Caching Strategy&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;implementation-guidelines&#34;&gt;Implementation Guidelines
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Circuit Breaker Integration&lt;/li&gt;
+&lt;li&gt;Timeout Configuration&lt;/li&gt;
+&lt;li&gt;Retry Policies&lt;/li&gt;
+&lt;li&gt;Error Response Standardization&lt;/li&gt;
+&lt;li&gt;Version Management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges
+&lt;/h2&gt;&lt;h3 id=&#34;performance&#34;&gt;Performance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Latency overhead&lt;/li&gt;
+&lt;li&gt;Response time&lt;/li&gt;
+&lt;li&gt;Resource utilization&lt;/li&gt;
+&lt;li&gt;Caching strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scalability&#34;&gt;Scalability
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Horizontal scaling&lt;/li&gt;
+&lt;li&gt;Load distribution&lt;/li&gt;
+&lt;li&gt;State management&lt;/li&gt;
+&lt;li&gt;Cache consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;maintenance&#34;&gt;Maintenance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Version management&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Testing strategies&lt;/li&gt;
+&lt;li&gt;Deployment complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102a-Service Discovery]] - Service location&lt;/li&gt;
+&lt;li&gt;[[102c-Circuit Breakers]] - Fault tolerance&lt;/li&gt;
+&lt;li&gt;[[101c-Partitioning and Sharding]] - Gateway scaling&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Gateway caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Kong Gateway Configuration&lt;/li&gt;
+&lt;li&gt;AWS API Gateway Setup&lt;/li&gt;
+&lt;li&gt;Spring Cloud Gateway&lt;/li&gt;
+&lt;li&gt;Nginx API Gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Microservices Patterns&amp;rdquo; - Gateway pattern chapter&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - API Gateway sections&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Index Core Concepts</title>
+        <link>https://example.com/post/index-core-concepts/</link>
+        <pubDate>Mon, 13 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-core-concepts/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=60654" alt="Featured image of post Index Core Concepts" /&gt;</description>
+        </item>
+        <item>
+        <title>Partitioning and Sharding</title>
+        <link>https://example.com/post/partitioning-and-sharding/</link>
+        <pubDate>Fri, 03 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/partitioning-and-sharding/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=94967" alt="Featured image of post Partitioning and Sharding" /&gt;&lt;h1 id=&#34;partitioning-and-sharding&#34;&gt;Partitioning and Sharding
+&lt;/h1&gt;&lt;p&gt;Partitioning and sharding are techniques used to distribute data across multiple nodes in a distributed system to achieve better scalability and performance.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;partitioning-vs-sharding&#34;&gt;Partitioning vs. Sharding
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Partitioning&lt;/strong&gt;: General term for dividing data across multiple nodes&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Sharding&lt;/strong&gt;: Horizontal partitioning where each partition is called a shard&lt;/li&gt;
+&lt;li&gt;Each shard contains a subset of the total data based on a partition key&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;partitioning-strategies&#34;&gt;Partitioning Strategies
+&lt;/h2&gt;&lt;h3 id=&#34;hash-based-partitioning&#34;&gt;Hash-Based Partitioning
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Uses hash function on partition key&lt;/li&gt;
+&lt;li&gt;Provides even distribution&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Consistent hashing in Cassandra&lt;/li&gt;
+&lt;li&gt;Hash slots in Redis Cluster&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;range-based-partitioning&#34;&gt;Range-Based Partitioning
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Divides data based on ranges of values&lt;/li&gt;
+&lt;li&gt;Good for range queries&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Time-series data by date ranges&lt;/li&gt;
+&lt;li&gt;User data by ID ranges&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;list-based-partitioning&#34;&gt;List-Based Partitioning
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Groups data based on specific lists of values&lt;/li&gt;
+&lt;li&gt;Useful for geographic or category-based partitioning&lt;/li&gt;
+&lt;li&gt;Example: Data partitioned by country or region&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges
+&lt;/h2&gt;&lt;h3 id=&#34;hot-spots&#34;&gt;Hot Spots
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Uneven data distribution&lt;/li&gt;
+&lt;li&gt;Disproportionate load on specific shards&lt;/li&gt;
+&lt;li&gt;Solutions:
+&lt;ul&gt;
+&lt;li&gt;Rebalancing&lt;/li&gt;
+&lt;li&gt;Partition key design&lt;/li&gt;
+&lt;li&gt;Cache layer&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rebalancing&#34;&gt;Rebalancing
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Adding/removing nodes&lt;/li&gt;
+&lt;li&gt;Data migration strategies&lt;/li&gt;
+&lt;li&gt;Minimizing impact on availability&lt;/li&gt;
+&lt;li&gt;Related: [[101b-Consistency Models]] during rebalancing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;cross-partition-operations&#34;&gt;Cross-Partition Operations
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Handling queries across multiple shards&lt;/li&gt;
+&lt;li&gt;Join operations&lt;/li&gt;
+&lt;li&gt;Maintaining consistency&lt;/li&gt;
+&lt;li&gt;Related: [[101a-CAP Theorem]] trade-offs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;h3 id=&#34;database-systems&#34;&gt;Database Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[202b-Cassandra Data Modeling]] - Ring-based partitioning&lt;/li&gt;
+&lt;li&gt;[[201a-Redis Overview]] - Hash slot-based sharding&lt;/li&gt;
+&lt;li&gt;MongoDB - Range-based sharding&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-queues&#34;&gt;Message Queues
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[203c-Pulsar Topic Partitioning]] - Topic partitioning&lt;/li&gt;
+&lt;li&gt;Kafka partitioning strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;partition-key-selection&#34;&gt;Partition Key Selection
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Even distribution&lt;/li&gt;
+&lt;li&gt;Minimal hot spots&lt;/li&gt;
+&lt;li&gt;Support for common query patterns&lt;/li&gt;
+&lt;li&gt;Future growth consideration&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;monitoring-and-maintenance&#34;&gt;Monitoring and Maintenance
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Shard size and distribution&lt;/li&gt;
+&lt;li&gt;Rebalancing metrics&lt;/li&gt;
+&lt;li&gt;Cross-partition operation frequency&lt;/li&gt;
+&lt;li&gt;Performance metrics&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-concepts&#34;&gt;Related Concepts
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[101a-CAP Theorem]] - Consistency vs. availability&lt;/li&gt;
+&lt;li&gt;[[101b-Consistency Models]] - Data consistency across partitions&lt;/li&gt;
+&lt;li&gt;[[Handling Cassandra Failures]] - Partition failure scenarios&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Designing Data-Intensive Applications&amp;rdquo; - Partitioning chapter&lt;/li&gt;
+&lt;li&gt;Database-specific partitioning documentation&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Service Discovery</title>
+        <link>https://example.com/post/service-discovery/</link>
+        <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/service-discovery/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=52988" alt="Featured image of post Service Discovery" /&gt;&lt;h1 id=&#34;service-discovery&#34;&gt;Service Discovery
+&lt;/h1&gt;&lt;p&gt;Service discovery is a key component in microservices architecture that enables services to find and communicate with each other dynamically.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;service-registry&#34;&gt;Service Registry
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Centralized registry of service instances&lt;/li&gt;
+&lt;li&gt;Service registration and deregistration&lt;/li&gt;
+&lt;li&gt;Health check mechanisms&lt;/li&gt;
+&lt;li&gt;Metadata management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;discovery-patterns&#34;&gt;Discovery Patterns
+&lt;/h3&gt;&lt;h4 id=&#34;client-side-discovery&#34;&gt;Client-Side Discovery
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Clients query registry directly&lt;/li&gt;
+&lt;li&gt;Client-side load balancing&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Netflix Eureka with Ribbon&lt;/li&gt;
+&lt;li&gt;Consul with DNS interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;server-side-discovery&#34;&gt;Server-Side Discovery
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Load balancer handles service lookup&lt;/li&gt;
+&lt;li&gt;Clients connect to load balancer&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Kubernetes Service&lt;/li&gt;
+&lt;li&gt;AWS ALB/NLB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-approaches&#34;&gt;Implementation Approaches
+&lt;/h2&gt;&lt;h3 id=&#34;dns-based-discovery&#34;&gt;DNS-Based Discovery
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Traditional DNS records&lt;/li&gt;
+&lt;li&gt;SRV records&lt;/li&gt;
+&lt;li&gt;DNS-based service mesh&lt;/li&gt;
+&lt;li&gt;Limitations and caching concerns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;key-value-store&#34;&gt;Key-Value Store
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consul&lt;/li&gt;
+&lt;li&gt;etcd&lt;/li&gt;
+&lt;li&gt;ZooKeeper&lt;/li&gt;
+&lt;li&gt;Consistency considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mesh-based-discovery&#34;&gt;Mesh-Based Discovery
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Istio service mesh&lt;/li&gt;
+&lt;li&gt;Linkerd&lt;/li&gt;
+&lt;li&gt;Envoy&lt;/li&gt;
+&lt;li&gt;Sidecar pattern implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges
+&lt;/h2&gt;&lt;h3 id=&#34;health-checking&#34;&gt;Health Checking
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Active vs. passive checks&lt;/li&gt;
+&lt;li&gt;Timeout configuration&lt;/li&gt;
+&lt;li&gt;Circuit breaking integration&lt;/li&gt;
+&lt;li&gt;Related: [[102c-Circuit Breakers]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;configuration-management&#34;&gt;Configuration Management
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service endpoints&lt;/li&gt;
+&lt;li&gt;Protocol information&lt;/li&gt;
+&lt;li&gt;Credentials and secrets&lt;/li&gt;
+&lt;li&gt;Environment-specific settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scale-and-performance&#34;&gt;Scale and Performance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Registry scalability&lt;/li&gt;
+&lt;li&gt;Cache management&lt;/li&gt;
+&lt;li&gt;Query performance&lt;/li&gt;
+&lt;li&gt;Network overhead&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;registration-patterns&#34;&gt;Registration Patterns
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Self-registration&lt;/li&gt;
+&lt;li&gt;Third-party registration&lt;/li&gt;
+&lt;li&gt;Platform-managed registration&lt;/li&gt;
+&lt;li&gt;Hybrid approaches&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;resilience-strategies&#34;&gt;Resilience Strategies
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Cache fallbacks&lt;/li&gt;
+&lt;li&gt;Multiple registries&lt;/li&gt;
+&lt;li&gt;Circuit breakers&lt;/li&gt;
+&lt;li&gt;Retry mechanisms&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102b-API Gateways]] - Service routing and aggregation&lt;/li&gt;
+&lt;li&gt;[[102c-Circuit Breakers]] - Failure handling&lt;/li&gt;
+&lt;li&gt;[[101a-CAP Theorem]] - Consistency considerations&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Service registry implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Kubernetes Service Discovery&lt;/li&gt;
+&lt;li&gt;Consul Service Mesh&lt;/li&gt;
+&lt;li&gt;Spring Cloud Netflix&lt;/li&gt;
+&lt;li&gt;AWS App Mesh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - Service Discovery chapter&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Cloud Native Patterns&amp;rdquo; - Discovery patterns&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Circuit Breakers</title>
+        <link>https://example.com/post/circuit-breakers/</link>
+        <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/circuit-breakers/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=73022" alt="Featured image of post Circuit Breakers" /&gt;&lt;h1 id=&#34;circuit-breakers&#34;&gt;Circuit Breakers
+&lt;/h1&gt;&lt;p&gt;Circuit breakers are fault tolerance patterns that prevent cascading failures in distributed systems by temporarily stopping operations that are likely to fail.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;circuit-states&#34;&gt;Circuit States
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Closed&lt;/strong&gt; - Normal operation, requests flow through&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open&lt;/strong&gt; - Failure detected, requests fail fast&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Half-Open&lt;/strong&gt; - Testing if service has recovered&lt;/li&gt;
+&lt;li&gt;State transition logic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;failure-detection&#34;&gt;Failure Detection
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Error thresholds&lt;/li&gt;
+&lt;li&gt;Timeout tracking&lt;/li&gt;
+&lt;li&gt;Response latency&lt;/li&gt;
+&lt;li&gt;Custom failure criteria&lt;/li&gt;
+&lt;li&gt;Health check integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-patterns&#34;&gt;Implementation Patterns
+&lt;/h2&gt;&lt;h3 id=&#34;basic-circuit-breaker&#34;&gt;Basic Circuit Breaker
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Error counting&lt;/li&gt;
+&lt;li&gt;Timeout monitoring&lt;/li&gt;
+&lt;li&gt;Reset intervals&lt;/li&gt;
+&lt;li&gt;Failure thresholds&lt;/li&gt;
+&lt;li&gt;Recovery strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;advanced-patterns&#34;&gt;Advanced Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Bulkhead isolation&lt;/li&gt;
+&lt;li&gt;Fallback mechanisms&lt;/li&gt;
+&lt;li&gt;Cache integration&lt;/li&gt;
+&lt;li&gt;Retry policies&lt;/li&gt;
+&lt;li&gt;Related: [[102a-Service Discovery]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-features&#34;&gt;Common Features
+&lt;/h2&gt;&lt;h3 id=&#34;configuration&#34;&gt;Configuration
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Failure thresholds&lt;/li&gt;
+&lt;li&gt;Timeout settings&lt;/li&gt;
+&lt;li&gt;Reset intervals&lt;/li&gt;
+&lt;li&gt;Fallback options&lt;/li&gt;
+&lt;li&gt;Monitoring hooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring&#34;&gt;Monitoring
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Success/failure rates&lt;/li&gt;
+&lt;li&gt;Response times&lt;/li&gt;
+&lt;li&gt;Circuit state&lt;/li&gt;
+&lt;li&gt;Recovery metrics&lt;/li&gt;
+&lt;li&gt;Health indicators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recovery-strategies&#34;&gt;Recovery Strategies
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Gradual recovery&lt;/li&gt;
+&lt;li&gt;Fallback responses&lt;/li&gt;
+&lt;li&gt;Cache utilization&lt;/li&gt;
+&lt;li&gt;Alternative services&lt;/li&gt;
+&lt;li&gt;Degraded functionality&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;h3 id=&#34;popular-libraries&#34;&gt;Popular Libraries
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Netflix Hystrix&lt;/li&gt;
+&lt;li&gt;Resilience4j&lt;/li&gt;
+&lt;li&gt;Polly (.NET)&lt;/li&gt;
+&lt;li&gt;Spring Cloud Circuit Breaker&lt;/li&gt;
+&lt;li&gt;Custom implementations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integration-points&#34;&gt;Integration Points
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[102b-API Gateways]] - Gateway level protection&lt;/li&gt;
+&lt;li&gt;Service-to-service calls&lt;/li&gt;
+&lt;li&gt;Database operations&lt;/li&gt;
+&lt;li&gt;External API calls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;design-guidelines&#34;&gt;Design Guidelines
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Proper threshold setting&lt;/li&gt;
+&lt;li&gt;Meaningful fallbacks&lt;/li&gt;
+&lt;li&gt;Comprehensive monitoring&lt;/li&gt;
+&lt;li&gt;Clear failure criteria&lt;/li&gt;
+&lt;li&gt;Recovery planning&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;common-pitfalls&#34;&gt;Common Pitfalls
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Incorrect thresholds&lt;/li&gt;
+&lt;li&gt;Missing fallbacks&lt;/li&gt;
+&lt;li&gt;Poor monitoring&lt;/li&gt;
+&lt;li&gt;Improper timeouts&lt;/li&gt;
+&lt;li&gt;Inadequate testing&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-patterns&#34;&gt;Related Patterns
+&lt;/h2&gt;&lt;h3 id=&#34;resilience-patterns&#34;&gt;Resilience Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Retry pattern&lt;/li&gt;
+&lt;li&gt;Timeout pattern&lt;/li&gt;
+&lt;li&gt;Bulkhead pattern&lt;/li&gt;
+&lt;li&gt;Fallback pattern&lt;/li&gt;
+&lt;li&gt;Cache-aside pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring-patterns&#34;&gt;Monitoring Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Health check endpoints&lt;/li&gt;
+&lt;li&gt;Metric collection&lt;/li&gt;
+&lt;li&gt;Log aggregation&lt;/li&gt;
+&lt;li&gt;Alerting systems&lt;/li&gt;
+&lt;li&gt;Dashboard integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102a-Service Discovery]] - Service health monitoring&lt;/li&gt;
+&lt;li&gt;[[102b-API Gateways]] - Gateway integration&lt;/li&gt;
+&lt;li&gt;[[101a-CAP Theorem]] - Availability considerations&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Fallback caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Release It!&amp;rdquo; - Circuit Breaker pattern&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - Failure handling&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Index Event Sourcing</title>
+        <link>https://example.com/post/event-sourcing/</link>
+        <pubDate>Thu, 24 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/event-sourcing/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1668950051217-d15ae96db28e?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Index Event Sourcing" /&gt;</description>
+        </item>
+        <item>
+        <title>CAP Theorem in Distributed Systems</title>
+        <link>https://example.com/post/distributed-systems-cap-theorem/</link>
+        <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/distributed-systems-cap-theorem/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=52648" alt="Featured image of post CAP Theorem in Distributed Systems" /&gt;&lt;h2 id=&#34;what-is-the-cap-theorem&#34;&gt;What is the CAP Theorem?
+&lt;/h2&gt;&lt;p&gt;The CAP theorem, formulated by Eric Brewer in 2000, states that a distributed system cannot simultaneously provide more than two out of the following three guarantees:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Every read receives the most recent write or an error&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Every request receives a non-error response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition tolerance&lt;/strong&gt;: The system continues to operate despite network partitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-is-it-important&#34;&gt;Why is it Important?
+&lt;/h2&gt;&lt;p&gt;In distributed systems, network partitions are a given - they will happen. So in reality, we&amp;rsquo;re choosing between consistency and availability when a partition occurs.&lt;/p&gt;
+&lt;h2 id=&#34;cap-in-practice&#34;&gt;CAP in Practice
+&lt;/h2&gt;&lt;h3 id=&#34;cp-systems-consistent--partition-tolerant&#34;&gt;CP Systems (Consistent + Partition Tolerant)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Examples: Apache HBase, MongoDB (with strong consistency settings)&lt;/li&gt;
+&lt;li&gt;These systems will return an error or timeout if a partition occurs rather than returning potentially stale data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ap-systems-available--partition-tolerant&#34;&gt;AP Systems (Available + Partition Tolerant)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Examples: Cassandra, Amazon DynamoDB&lt;/li&gt;
+&lt;li&gt;These systems will return the most recent available data, which might not be the most recent write&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ca-systems-consistent--available&#34;&gt;CA Systems (Consistent + Available)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Traditional relational databases like PostgreSQL in a single-node configuration&lt;/li&gt;
+&lt;li&gt;These systems aren&amp;rsquo;t partition tolerant and thus aren&amp;rsquo;t truly distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;making-the-right-choice&#34;&gt;Making the Right Choice
+&lt;/h2&gt;&lt;p&gt;The selection between consistency and availability is application-specific:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banking systems typically choose consistency over availability&lt;/li&gt;
+&lt;li&gt;Content delivery networks usually prefer availability over consistency&lt;/li&gt;
+&lt;li&gt;Many systems use a combination approach, with different consistency levels for different operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;beyond-cap-pacelc&#34;&gt;Beyond CAP: PACELC
+&lt;/h2&gt;&lt;p&gt;The PACELC theorem extends CAP by stating that in case of network partitioning (P), a distributed system must choose between availability (A) and consistency (C), but else (E), when the system is running normally, it can choose between latency (L) and consistency (C).&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Maps of Content (MOC): Interview Preparation Knowledge Base</title>
+        <link>https://example.com/post/maps-of-content/</link>
+        <pubDate>Sat, 30 Sep 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/maps-of-content/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=64203" alt="Featured image of post Maps of Content (MOC): Interview Preparation Knowledge Base" /&gt;&lt;h2 id=&#34;maps-of-content-moc-interview-preparation-knowledge-base&#34;&gt;Maps of Content (MOC): Interview Preparation Knowledge Base
+&lt;/h2&gt;&lt;p&gt;Welcome to my Knowledge Base! This post serves as a central navigation hub for all the content on this site. It&amp;rsquo;s structured to help you easily find and connect related concepts for backend engineering and interview preparation.&lt;/p&gt;
+&lt;h2 id=&#34;core-knowledge-areas&#34;&gt;Core Knowledge Areas
+&lt;/h2&gt;&lt;h3 id=&#34;core-concepts&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/categories/core-concepts/&#34; &gt;Core Concepts&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;Fundamental technical concepts that form the foundation of distributed systems and modern backends.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Distributed Systems&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/distributed-systems-cap-theorem/&#34; &gt;CAP Theorem in Distributed Systems&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Consistency Models (Coming soon)&lt;/li&gt;
+&lt;li&gt;Partitioning and Sharding (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Microservices&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Service Discovery (Coming soon)&lt;/li&gt;
+&lt;li&gt;API Gateways (Coming soon)&lt;/li&gt;
+&lt;li&gt;Circuit Breakers (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Event-Driven Architecture&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;CQRS (Coming soon)&lt;/li&gt;
+&lt;li&gt;Event Sourcing (Coming soon)&lt;/li&gt;
+&lt;li&gt;Message Brokers (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;technologies&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/categories/technologies/&#34; &gt;Technologies&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;Deep dives into specific technologies used in backend development.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Redis&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/redis-data-structures/&#34; &gt;Redis Data Structures and Use Cases&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Redis Patterns (Coming soon)&lt;/li&gt;
+&lt;li&gt;Redis Performance Optimization (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Databases&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Cassandra Data Modeling (Coming soon)&lt;/li&gt;
+&lt;li&gt;PostgreSQL Performance Tuning (Coming soon)&lt;/li&gt;
+&lt;li&gt;MongoDB Best Practices (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Brokers&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kafka Architecture (Coming soon)&lt;/li&gt;
+&lt;li&gt;RabbitMQ Patterns (Coming soon)&lt;/li&gt;
+&lt;li&gt;Pulsar vs Kafka (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;interview-preparation&#34;&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/categories/interview-prep/&#34; &gt;Interview Preparation&lt;/a&gt;
+&lt;/h3&gt;&lt;p&gt;Materials specifically designed to help you prepare for technical interviews.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;System Design&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://example.com/post/system-design-notification-service/&#34; &gt;Scaling a Notification Service&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;Designing a URL Shortener (Coming soon)&lt;/li&gt;
+&lt;li&gt;Building a Distributed Cache (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Coding Problems&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Common Data Structure Problems (Coming soon)&lt;/li&gt;
+&lt;li&gt;Concurrency Challenges (Coming soon)&lt;/li&gt;
+&lt;li&gt;Algorithm Patterns (Coming soon)&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;how-to-use-this-knowledge-base&#34;&gt;How to Use This Knowledge Base
+&lt;/h2&gt;&lt;p&gt;There are multiple ways to navigate this site:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Start with the MOCs&lt;/strong&gt;: Use this and other Maps of Content as starting points&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Browse by Category&lt;/strong&gt;: Explore content organized by main categories&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow Series&lt;/strong&gt;: Dive deep into a specific topic following a progressive series&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Search by Tags&lt;/strong&gt;: Find related content across different categories&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;content-principles&#34;&gt;Content Principles
+&lt;/h2&gt;&lt;p&gt;This knowledge base follows these principles:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Interconnected&lt;/strong&gt;: Content is linked to help you see relationships between concepts&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Practical&lt;/strong&gt;: Theoretical concepts are supported by practical examples&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Interview-focused&lt;/strong&gt;: Designed to prepare you for technical interviews&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Evolving&lt;/strong&gt;: Regularly updated with new content and improvements&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;contribution&#34;&gt;Contribution
+&lt;/h2&gt;&lt;p&gt;Have a suggestion? Found an error? Would like to see a specific topic? Feel free to reach out or contribute!&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

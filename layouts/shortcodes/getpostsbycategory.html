@@ -1,0 +1,11 @@
+{{ $category := .Get "category" }}
+<ul>
+  {{ range where site.RegularPages ".Params.categories" "in" (slice $category) }}
+    <li>
+      <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+      <span class="date">{{ .Date.Format "2006-01-02" }}</span>
+    </li>
+  {{ else }}
+    <li>No posts in this category yet.</li>
+  {{ end }}
+</ul>

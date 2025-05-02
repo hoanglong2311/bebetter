@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Projects on My Knowledge Blog</title>
+        <link>https://example.com/categories/projects/</link>
+        <description>Recent content in Projects on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 31 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/projects/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Flink Example Implementation</title>
+        <link>https://example.com/post/flink-example-implementation/</link>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/flink-example-implementation/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1743062356649-eb59ce7b8140?q=80&amp;w=3832&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Flink Example Implementation" /&gt;&lt;h2 id=&#34;index-flink-example-implementation&#34;&gt;Index Flink Example Implementation
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Index Mini Backend</title>
+        <link>https://example.com/post/index-mini-backend/</link>
+        <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-mini-backend/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1743062545929-0135b193c968?q=80&amp;w=1645&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Index Mini Backend" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Challenges</title>
+        <link>https://example.com/post/mini-backend-challenges/</link>
+        <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-challenges/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1713281887952-e0b08e526f90?q=80&amp;w=1586&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Challenges" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Design</title>
+        <link>https://example.com/post/mini-backend-design/</link>
+        <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-design/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1709339069106-fd6e43fe7b33?q=80&amp;w=1632&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Design" /&gt;</description>
+        </item>
+        <item>
+        <title>Index Projects</title>
+        <link>https://example.com/post/index-projects/</link>
+        <pubDate>Fri, 22 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-projects/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=88132" alt="Featured image of post Index Projects" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Implementation</title>
+        <link>https://example.com/post/mini-backend-implementation/</link>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-implementation/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1577650821816-936bfa0b9504?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Implementation" /&gt;</description>
+        </item>
+        <item>
+        <title>Index Flink Example</title>
+        <link>https://example.com/post/index-flink-example/</link>
+        <pubDate>Sun, 27 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-flink-example/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1741850821489-09bc4bce3960?q=80&amp;w=3870&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Index Flink Example" /&gt;</description>
+        </item>
+        <item>
+        <title>Flink Example Design</title>
+        <link>https://example.com/post/flink-example-design/</link>
+        <pubDate>Tue, 22 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/flink-example-design/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=60365" alt="Featured image of post Flink Example Design" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

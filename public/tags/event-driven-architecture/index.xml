@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Event-Driven Architecture on My Knowledge Blog</title>
+        <link>https://example.com/tags/event-driven-architecture/</link>
+        <description>Recent content in Event-Driven Architecture on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/event-driven-architecture/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Core Concepts MOC</title>
+        <link>https://example.com/post/core-concepts-moc/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/core-concepts-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=70734" alt="Featured image of post Core Concepts MOC" /&gt;&lt;h1 id=&#34;core-concepts-moc&#34;&gt;Core Concepts MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) serves as a central hub for fundamental technical concepts in distributed systems, microservices, and event-driven architecture.&lt;/p&gt;
+&lt;h2 id=&#34;distributed-systems&#34;&gt;Distributed Systems
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[CAP Theorem]] - Understanding the trade-offs between Consistency, Availability, and Partition Tolerance&lt;/li&gt;
+&lt;li&gt;[[Consistency Models]] - Strong, eventual, and causal consistency&lt;/li&gt;
+&lt;li&gt;[[Partitioning and Sharding]] - Strategies for distributing data across multiple nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;microservices-architecture&#34;&gt;Microservices Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Service Discovery]] - How services find and communicate with each other&lt;/li&gt;
+&lt;li&gt;[[API Gateways]] - Central entry point for client applications&lt;/li&gt;
+&lt;li&gt;[[Circuit Breakers]] - Handling failures gracefully in distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;event-driven-architecture&#34;&gt;Event-Driven Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Event Sourcing]] - Using events as the source of truth&lt;/li&gt;
+&lt;li&gt;[[CQRS]] - Command Query Responsibility Segregation&lt;/li&gt;
+&lt;li&gt;[[Message Brokers]] - Understanding message queues and pub/sub systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-concepts-by-topic&#34;&gt;Key Concepts by Topic
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-systems-fundamentals&#34;&gt;Distributed Systems Fundamentals
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consensus Algorithms&lt;/li&gt;
+&lt;li&gt;Distributed Transactions&lt;/li&gt;
+&lt;li&gt;Replication Strategies&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Clock Synchronization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microservices-patterns&#34;&gt;Microservices Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service Mesh&lt;/li&gt;
+&lt;li&gt;Backend for Frontend (BFF)&lt;/li&gt;
+&lt;li&gt;Bulkhead Pattern&lt;/li&gt;
+&lt;li&gt;Sidecar Pattern&lt;/li&gt;
+&lt;li&gt;Database per Service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;event-driven-patterns&#34;&gt;Event-Driven Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Event-Driven Integration&lt;/li&gt;
+&lt;li&gt;Event Streaming&lt;/li&gt;
+&lt;li&gt;Event Sourcing&lt;/li&gt;
+&lt;li&gt;Saga Pattern&lt;/li&gt;
+&lt;li&gt;Outbox Pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[020-Technologies MOC]] - Specific technologies implementing these concepts&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Code examples and implementations&lt;/li&gt;
+&lt;li&gt;[[040-Projects MOC]] - Projects utilizing these concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-and-references&#34;&gt;Resources and References
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Distributed Systems by Martin Kleppmann&lt;/li&gt;
+&lt;li&gt;Building Microservices by Sam Newman&lt;/li&gt;
+&lt;li&gt;Designing Data-Intensive Applications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

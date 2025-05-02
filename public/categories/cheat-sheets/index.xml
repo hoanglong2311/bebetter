@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Cheat Sheets on My Knowledge Blog</title>
+        <link>https://example.com/categories/cheat-sheets/</link>
+        <description>Recent content in Cheat Sheets on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Thu, 06 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/cheat-sheets/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Kubernetes Commands</title>
+        <link>https://example.com/post/kubernetes-commands/</link>
+        <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/kubernetes-commands/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=96271" alt="Featured image of post Kubernetes Commands" /&gt;&lt;h2 id=&#34;kubernetes-commands&#34;&gt;Kubernetes Commands
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Index Cheat Sheets</title>
+        <link>https://example.com/post/index-cheat-sheets/</link>
+        <pubDate>Sat, 14 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-cheat-sheets/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=91627" alt="Featured image of post Index Cheat Sheets" /&gt;&lt;h2 id=&#34;index-cheat-sheets&#34;&gt;Index Cheat Sheets
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Redis Commands</title>
+        <link>https://example.com/post/redis-commands/</link>
+        <pubDate>Thu, 21 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/redis-commands/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=77040" alt="Featured image of post Redis Commands" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

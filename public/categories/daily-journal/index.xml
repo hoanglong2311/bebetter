@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Daily Journal on My Knowledge Blog</title>
+        <link>https://example.com/categories/daily-journal/</link>
+        <description>Recent content in Daily Journal on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 22 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/daily-journal/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Daily Journal</title>
+        <link>https://example.com/post/10/</link>
+        <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/10/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=80243" alt="Featured image of post Daily Journal" /&gt;&lt;h2 id=&#34;daily-journal&#34;&gt;Daily Journal
+&lt;/h2&gt;</description>
+        </item>
+        <item>
+        <title>Daily Notes Index</title>
+        <link>https://example.com/post/daily-notes-index/</link>
+        <pubDate>Sun, 09 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/daily-notes-index/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=32229" alt="Featured image of post Daily Notes Index" /&gt;</description>
+        </item>
+        <item>
+        <title>Index Daily Journal</title>
+        <link>https://example.com/post/index-daily-journal/</link>
+        <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-daily-journal/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=88993" alt="Featured image of post Index Daily Journal" /&gt;</description>
+        </item>
+        <item>
+        <title>Daily Journal</title>
+        <link>https://example.com/post/10-02/</link>
+        <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/10-02/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=19509" alt="Featured image of post Daily Journal" /&gt;</description>
+        </item>
+        <item>
+        <title>Daily Journal</title>
+        <link>https://example.com/post/10-01/</link>
+        <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/10-01/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=54037" alt="Featured image of post Daily Journal" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

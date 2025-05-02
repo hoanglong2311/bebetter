@@ -1,0 +1,601 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Microservices on My Knowledge Blog</title>
+        <link>https://example.com/tags/microservices/</link>
+        <description>Recent content in Microservices on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/microservices/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Core Concepts MOC</title>
+        <link>https://example.com/post/core-concepts-moc/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/core-concepts-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=70734" alt="Featured image of post Core Concepts MOC" /&gt;&lt;h1 id=&#34;core-concepts-moc&#34;&gt;Core Concepts MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) serves as a central hub for fundamental technical concepts in distributed systems, microservices, and event-driven architecture.&lt;/p&gt;
+&lt;h2 id=&#34;distributed-systems&#34;&gt;Distributed Systems
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[CAP Theorem]] - Understanding the trade-offs between Consistency, Availability, and Partition Tolerance&lt;/li&gt;
+&lt;li&gt;[[Consistency Models]] - Strong, eventual, and causal consistency&lt;/li&gt;
+&lt;li&gt;[[Partitioning and Sharding]] - Strategies for distributing data across multiple nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;microservices-architecture&#34;&gt;Microservices Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Service Discovery]] - How services find and communicate with each other&lt;/li&gt;
+&lt;li&gt;[[API Gateways]] - Central entry point for client applications&lt;/li&gt;
+&lt;li&gt;[[Circuit Breakers]] - Handling failures gracefully in distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;event-driven-architecture&#34;&gt;Event-Driven Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Event Sourcing]] - Using events as the source of truth&lt;/li&gt;
+&lt;li&gt;[[CQRS]] - Command Query Responsibility Segregation&lt;/li&gt;
+&lt;li&gt;[[Message Brokers]] - Understanding message queues and pub/sub systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-concepts-by-topic&#34;&gt;Key Concepts by Topic
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-systems-fundamentals&#34;&gt;Distributed Systems Fundamentals
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consensus Algorithms&lt;/li&gt;
+&lt;li&gt;Distributed Transactions&lt;/li&gt;
+&lt;li&gt;Replication Strategies&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Clock Synchronization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microservices-patterns&#34;&gt;Microservices Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service Mesh&lt;/li&gt;
+&lt;li&gt;Backend for Frontend (BFF)&lt;/li&gt;
+&lt;li&gt;Bulkhead Pattern&lt;/li&gt;
+&lt;li&gt;Sidecar Pattern&lt;/li&gt;
+&lt;li&gt;Database per Service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;event-driven-patterns&#34;&gt;Event-Driven Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Event-Driven Integration&lt;/li&gt;
+&lt;li&gt;Event Streaming&lt;/li&gt;
+&lt;li&gt;Event Sourcing&lt;/li&gt;
+&lt;li&gt;Saga Pattern&lt;/li&gt;
+&lt;li&gt;Outbox Pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[020-Technologies MOC]] - Specific technologies implementing these concepts&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Code examples and implementations&lt;/li&gt;
+&lt;li&gt;[[040-Projects MOC]] - Projects utilizing these concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-and-references&#34;&gt;Resources and References
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Distributed Systems by Martin Kleppmann&lt;/li&gt;
+&lt;li&gt;Building Microservices by Sam Newman&lt;/li&gt;
+&lt;li&gt;Designing Data-Intensive Applications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>API Gateways</title>
+        <link>https://example.com/post/api-gateways/</link>
+        <pubDate>Mon, 20 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/api-gateways/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=27061" alt="Featured image of post API Gateways" /&gt;&lt;h1 id=&#34;api-gateways&#34;&gt;API Gateways
+&lt;/h1&gt;&lt;p&gt;API Gateways serve as the entry point for client applications in a microservices architecture, handling routing, aggregation, and cross-cutting concerns.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;gateway-responsibilities&#34;&gt;Gateway Responsibilities
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Request Routing&lt;/li&gt;
+&lt;li&gt;API Composition&lt;/li&gt;
+&lt;li&gt;Protocol Translation&lt;/li&gt;
+&lt;li&gt;Authentication/Authorization&lt;/li&gt;
+&lt;li&gt;Rate Limiting&lt;/li&gt;
+&lt;li&gt;Request/Response Transformation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;gateway-patterns&#34;&gt;Gateway Patterns
+&lt;/h3&gt;&lt;h4 id=&#34;backend-for-frontend-bff&#34;&gt;Backend for Frontend (BFF)
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Client-specific gateways&lt;/li&gt;
+&lt;li&gt;Tailored responses&lt;/li&gt;
+&lt;li&gt;Optimized communication&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Mobile BFF&lt;/li&gt;
+&lt;li&gt;Web BFF&lt;/li&gt;
+&lt;li&gt;Third-party BFF&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;aggregation-gateway&#34;&gt;Aggregation Gateway
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Combines multiple service calls&lt;/li&gt;
+&lt;li&gt;Response composition&lt;/li&gt;
+&lt;li&gt;Parallel request handling&lt;/li&gt;
+&lt;li&gt;Request orchestration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-approaches&#34;&gt;Implementation Approaches
+&lt;/h2&gt;&lt;h3 id=&#34;traditional-api-gateway&#34;&gt;Traditional API Gateway
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Kong&lt;/li&gt;
+&lt;li&gt;Amazon API Gateway&lt;/li&gt;
+&lt;li&gt;Azure API Management&lt;/li&gt;
+&lt;li&gt;Nginx with custom modules&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;service-mesh-gateway&#34;&gt;Service Mesh Gateway
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Istio Ingress Gateway&lt;/li&gt;
+&lt;li&gt;Linkerd Gateway&lt;/li&gt;
+&lt;li&gt;AWS App Mesh&lt;/li&gt;
+&lt;li&gt;Integration with [[102a-Service Discovery]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;custom-gateway-solutions&#34;&gt;Custom Gateway Solutions
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Spring Cloud Gateway&lt;/li&gt;
+&lt;li&gt;Netflix Zuul&lt;/li&gt;
+&lt;li&gt;Custom implementations&lt;/li&gt;
+&lt;li&gt;Framework selection criteria&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-features&#34;&gt;Common Features
+&lt;/h2&gt;&lt;h3 id=&#34;security&#34;&gt;Security
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Authentication&lt;/li&gt;
+&lt;li&gt;Authorization&lt;/li&gt;
+&lt;li&gt;API Keys&lt;/li&gt;
+&lt;li&gt;OAuth/OIDC Integration&lt;/li&gt;
+&lt;li&gt;SSL/TLS Termination&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;traffic-management&#34;&gt;Traffic Management
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Load Balancing&lt;/li&gt;
+&lt;li&gt;Circuit Breaking&lt;/li&gt;
+&lt;li&gt;Rate Limiting&lt;/li&gt;
+&lt;li&gt;Request Throttling&lt;/li&gt;
+&lt;li&gt;Related: [[102c-Circuit Breakers]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring-and-analytics&#34;&gt;Monitoring and Analytics
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Request Logging&lt;/li&gt;
+&lt;li&gt;Performance Metrics&lt;/li&gt;
+&lt;li&gt;Error Tracking&lt;/li&gt;
+&lt;li&gt;Usage Analytics&lt;/li&gt;
+&lt;li&gt;SLA Monitoring&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;design-considerations&#34;&gt;Design Considerations
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Scalability&lt;/li&gt;
+&lt;li&gt;High Availability&lt;/li&gt;
+&lt;li&gt;Error Handling&lt;/li&gt;
+&lt;li&gt;Caching Strategy&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;implementation-guidelines&#34;&gt;Implementation Guidelines
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Circuit Breaker Integration&lt;/li&gt;
+&lt;li&gt;Timeout Configuration&lt;/li&gt;
+&lt;li&gt;Retry Policies&lt;/li&gt;
+&lt;li&gt;Error Response Standardization&lt;/li&gt;
+&lt;li&gt;Version Management&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges
+&lt;/h2&gt;&lt;h3 id=&#34;performance&#34;&gt;Performance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Latency overhead&lt;/li&gt;
+&lt;li&gt;Response time&lt;/li&gt;
+&lt;li&gt;Resource utilization&lt;/li&gt;
+&lt;li&gt;Caching strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scalability&#34;&gt;Scalability
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Horizontal scaling&lt;/li&gt;
+&lt;li&gt;Load distribution&lt;/li&gt;
+&lt;li&gt;State management&lt;/li&gt;
+&lt;li&gt;Cache consistency&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;maintenance&#34;&gt;Maintenance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Version management&lt;/li&gt;
+&lt;li&gt;Documentation&lt;/li&gt;
+&lt;li&gt;Testing strategies&lt;/li&gt;
+&lt;li&gt;Deployment complexity&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102a-Service Discovery]] - Service location&lt;/li&gt;
+&lt;li&gt;[[102c-Circuit Breakers]] - Fault tolerance&lt;/li&gt;
+&lt;li&gt;[[101c-Partitioning and Sharding]] - Gateway scaling&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Gateway caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Kong Gateway Configuration&lt;/li&gt;
+&lt;li&gt;AWS API Gateway Setup&lt;/li&gt;
+&lt;li&gt;Spring Cloud Gateway&lt;/li&gt;
+&lt;li&gt;Nginx API Gateway&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Microservices Patterns&amp;rdquo; - Gateway pattern chapter&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - API Gateway sections&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Service Discovery</title>
+        <link>https://example.com/post/service-discovery/</link>
+        <pubDate>Sun, 15 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/service-discovery/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=52988" alt="Featured image of post Service Discovery" /&gt;&lt;h1 id=&#34;service-discovery&#34;&gt;Service Discovery
+&lt;/h1&gt;&lt;p&gt;Service discovery is a key component in microservices architecture that enables services to find and communicate with each other dynamically.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;service-registry&#34;&gt;Service Registry
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Centralized registry of service instances&lt;/li&gt;
+&lt;li&gt;Service registration and deregistration&lt;/li&gt;
+&lt;li&gt;Health check mechanisms&lt;/li&gt;
+&lt;li&gt;Metadata management&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;discovery-patterns&#34;&gt;Discovery Patterns
+&lt;/h3&gt;&lt;h4 id=&#34;client-side-discovery&#34;&gt;Client-Side Discovery
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Clients query registry directly&lt;/li&gt;
+&lt;li&gt;Client-side load balancing&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Netflix Eureka with Ribbon&lt;/li&gt;
+&lt;li&gt;Consul with DNS interface&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h4 id=&#34;server-side-discovery&#34;&gt;Server-Side Discovery
+&lt;/h4&gt;&lt;ul&gt;
+&lt;li&gt;Load balancer handles service lookup&lt;/li&gt;
+&lt;li&gt;Clients connect to load balancer&lt;/li&gt;
+&lt;li&gt;Examples:
+&lt;ul&gt;
+&lt;li&gt;Kubernetes Service&lt;/li&gt;
+&lt;li&gt;AWS ALB/NLB&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-approaches&#34;&gt;Implementation Approaches
+&lt;/h2&gt;&lt;h3 id=&#34;dns-based-discovery&#34;&gt;DNS-Based Discovery
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Traditional DNS records&lt;/li&gt;
+&lt;li&gt;SRV records&lt;/li&gt;
+&lt;li&gt;DNS-based service mesh&lt;/li&gt;
+&lt;li&gt;Limitations and caching concerns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;key-value-store&#34;&gt;Key-Value Store
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consul&lt;/li&gt;
+&lt;li&gt;etcd&lt;/li&gt;
+&lt;li&gt;ZooKeeper&lt;/li&gt;
+&lt;li&gt;Consistency considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;mesh-based-discovery&#34;&gt;Mesh-Based Discovery
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Istio service mesh&lt;/li&gt;
+&lt;li&gt;Linkerd&lt;/li&gt;
+&lt;li&gt;Envoy&lt;/li&gt;
+&lt;li&gt;Sidecar pattern implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-challenges&#34;&gt;Common Challenges
+&lt;/h2&gt;&lt;h3 id=&#34;health-checking&#34;&gt;Health Checking
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Active vs. passive checks&lt;/li&gt;
+&lt;li&gt;Timeout configuration&lt;/li&gt;
+&lt;li&gt;Circuit breaking integration&lt;/li&gt;
+&lt;li&gt;Related: [[102c-Circuit Breakers]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;configuration-management&#34;&gt;Configuration Management
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service endpoints&lt;/li&gt;
+&lt;li&gt;Protocol information&lt;/li&gt;
+&lt;li&gt;Credentials and secrets&lt;/li&gt;
+&lt;li&gt;Environment-specific settings&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;scale-and-performance&#34;&gt;Scale and Performance
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Registry scalability&lt;/li&gt;
+&lt;li&gt;Cache management&lt;/li&gt;
+&lt;li&gt;Query performance&lt;/li&gt;
+&lt;li&gt;Network overhead&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;registration-patterns&#34;&gt;Registration Patterns
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Self-registration&lt;/li&gt;
+&lt;li&gt;Third-party registration&lt;/li&gt;
+&lt;li&gt;Platform-managed registration&lt;/li&gt;
+&lt;li&gt;Hybrid approaches&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;resilience-strategies&#34;&gt;Resilience Strategies
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Cache fallbacks&lt;/li&gt;
+&lt;li&gt;Multiple registries&lt;/li&gt;
+&lt;li&gt;Circuit breakers&lt;/li&gt;
+&lt;li&gt;Retry mechanisms&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102b-API Gateways]] - Service routing and aggregation&lt;/li&gt;
+&lt;li&gt;[[102c-Circuit Breakers]] - Failure handling&lt;/li&gt;
+&lt;li&gt;[[101a-CAP Theorem]] - Consistency considerations&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Service registry implementation&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Kubernetes Service Discovery&lt;/li&gt;
+&lt;li&gt;Consul Service Mesh&lt;/li&gt;
+&lt;li&gt;Spring Cloud Netflix&lt;/li&gt;
+&lt;li&gt;AWS App Mesh&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - Service Discovery chapter&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Cloud Native Patterns&amp;rdquo; - Discovery patterns&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Circuit Breakers</title>
+        <link>https://example.com/post/circuit-breakers/</link>
+        <pubDate>Mon, 28 Oct 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/circuit-breakers/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=73022" alt="Featured image of post Circuit Breakers" /&gt;&lt;h1 id=&#34;circuit-breakers&#34;&gt;Circuit Breakers
+&lt;/h1&gt;&lt;p&gt;Circuit breakers are fault tolerance patterns that prevent cascading failures in distributed systems by temporarily stopping operations that are likely to fail.&lt;/p&gt;
+&lt;h2 id=&#34;core-concepts&#34;&gt;Core Concepts
+&lt;/h2&gt;&lt;h3 id=&#34;circuit-states&#34;&gt;Circuit States
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Closed&lt;/strong&gt; - Normal operation, requests flow through&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Open&lt;/strong&gt; - Failure detected, requests fail fast&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Half-Open&lt;/strong&gt; - Testing if service has recovered&lt;/li&gt;
+&lt;li&gt;State transition logic&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;failure-detection&#34;&gt;Failure Detection
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Error thresholds&lt;/li&gt;
+&lt;li&gt;Timeout tracking&lt;/li&gt;
+&lt;li&gt;Response latency&lt;/li&gt;
+&lt;li&gt;Custom failure criteria&lt;/li&gt;
+&lt;li&gt;Health check integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;implementation-patterns&#34;&gt;Implementation Patterns
+&lt;/h2&gt;&lt;h3 id=&#34;basic-circuit-breaker&#34;&gt;Basic Circuit Breaker
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Error counting&lt;/li&gt;
+&lt;li&gt;Timeout monitoring&lt;/li&gt;
+&lt;li&gt;Reset intervals&lt;/li&gt;
+&lt;li&gt;Failure thresholds&lt;/li&gt;
+&lt;li&gt;Recovery strategy&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;advanced-patterns&#34;&gt;Advanced Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Bulkhead isolation&lt;/li&gt;
+&lt;li&gt;Fallback mechanisms&lt;/li&gt;
+&lt;li&gt;Cache integration&lt;/li&gt;
+&lt;li&gt;Retry policies&lt;/li&gt;
+&lt;li&gt;Related: [[102a-Service Discovery]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;common-features&#34;&gt;Common Features
+&lt;/h2&gt;&lt;h3 id=&#34;configuration&#34;&gt;Configuration
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Failure thresholds&lt;/li&gt;
+&lt;li&gt;Timeout settings&lt;/li&gt;
+&lt;li&gt;Reset intervals&lt;/li&gt;
+&lt;li&gt;Fallback options&lt;/li&gt;
+&lt;li&gt;Monitoring hooks&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring&#34;&gt;Monitoring
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Success/failure rates&lt;/li&gt;
+&lt;li&gt;Response times&lt;/li&gt;
+&lt;li&gt;Circuit state&lt;/li&gt;
+&lt;li&gt;Recovery metrics&lt;/li&gt;
+&lt;li&gt;Health indicators&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;recovery-strategies&#34;&gt;Recovery Strategies
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Gradual recovery&lt;/li&gt;
+&lt;li&gt;Fallback responses&lt;/li&gt;
+&lt;li&gt;Cache utilization&lt;/li&gt;
+&lt;li&gt;Alternative services&lt;/li&gt;
+&lt;li&gt;Degraded functionality&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;implementation-examples&#34;&gt;Implementation Examples
+&lt;/h2&gt;&lt;h3 id=&#34;popular-libraries&#34;&gt;Popular Libraries
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Netflix Hystrix&lt;/li&gt;
+&lt;li&gt;Resilience4j&lt;/li&gt;
+&lt;li&gt;Polly (.NET)&lt;/li&gt;
+&lt;li&gt;Spring Cloud Circuit Breaker&lt;/li&gt;
+&lt;li&gt;Custom implementations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;integration-points&#34;&gt;Integration Points
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[102b-API Gateways]] - Gateway level protection&lt;/li&gt;
+&lt;li&gt;Service-to-service calls&lt;/li&gt;
+&lt;li&gt;Database operations&lt;/li&gt;
+&lt;li&gt;External API calls&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h2&gt;&lt;h3 id=&#34;design-guidelines&#34;&gt;Design Guidelines
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Proper threshold setting&lt;/li&gt;
+&lt;li&gt;Meaningful fallbacks&lt;/li&gt;
+&lt;li&gt;Comprehensive monitoring&lt;/li&gt;
+&lt;li&gt;Clear failure criteria&lt;/li&gt;
+&lt;li&gt;Recovery planning&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;common-pitfalls&#34;&gt;Common Pitfalls
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;Incorrect thresholds&lt;/li&gt;
+&lt;li&gt;Missing fallbacks&lt;/li&gt;
+&lt;li&gt;Poor monitoring&lt;/li&gt;
+&lt;li&gt;Improper timeouts&lt;/li&gt;
+&lt;li&gt;Inadequate testing&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;related-patterns&#34;&gt;Related Patterns
+&lt;/h2&gt;&lt;h3 id=&#34;resilience-patterns&#34;&gt;Resilience Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Retry pattern&lt;/li&gt;
+&lt;li&gt;Timeout pattern&lt;/li&gt;
+&lt;li&gt;Bulkhead pattern&lt;/li&gt;
+&lt;li&gt;Fallback pattern&lt;/li&gt;
+&lt;li&gt;Cache-aside pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;monitoring-patterns&#34;&gt;Monitoring Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Health check endpoints&lt;/li&gt;
+&lt;li&gt;Metric collection&lt;/li&gt;
+&lt;li&gt;Log aggregation&lt;/li&gt;
+&lt;li&gt;Alerting systems&lt;/li&gt;
+&lt;li&gt;Dashboard integration&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-topics&#34;&gt;Related Topics
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[102a-Service Discovery]] - Service health monitoring&lt;/li&gt;
+&lt;li&gt;[[102b-API Gateways]] - Gateway integration&lt;/li&gt;
+&lt;li&gt;[[101a-CAP Theorem]] - Availability considerations&lt;/li&gt;
+&lt;li&gt;[[201-Redis/201-Index|Redis]] - Fallback caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;further-reading&#34;&gt;Further Reading
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;&amp;ldquo;Release It!&amp;rdquo; - Circuit Breaker pattern&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Building Microservices&amp;rdquo; - Failure handling&lt;/li&gt;
+&lt;li&gt;[[501-System Design/501-Index|System Design]] case studies&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>System Design Interview: Scaling a Notification Service</title>
+        <link>https://example.com/post/system-design-notification-service/</link>
+        <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/system-design-notification-service/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=68422" alt="Featured image of post System Design Interview: Scaling a Notification Service" /&gt;&lt;h2 id=&#34;problem-statement&#34;&gt;Problem Statement
+&lt;/h2&gt;&lt;p&gt;Design a notification service that can send millions of notifications (push, SMS, email) to users daily with high reliability and low latency.&lt;/p&gt;
+&lt;h2 id=&#34;requirements-analysis&#34;&gt;Requirements Analysis
+&lt;/h2&gt;&lt;h3 id=&#34;functional-requirements&#34;&gt;Functional Requirements
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Support multiple notification types (push, SMS, email)&lt;/li&gt;
+&lt;li&gt;Support templating for personalized messages&lt;/li&gt;
+&lt;li&gt;Allow scheduling of notifications&lt;/li&gt;
+&lt;li&gt;Support batch and single notifications&lt;/li&gt;
+&lt;li&gt;Track delivery status&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;non-functional-requirements&#34;&gt;Non-Functional Requirements
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;High throughput (millions per day)&lt;/li&gt;
+&lt;li&gt;Low latency for time-sensitive notifications&lt;/li&gt;
+&lt;li&gt;High availability (99.9%+)&lt;/li&gt;
+&lt;li&gt;Failover mechanisms for provider outages&lt;/li&gt;
+&lt;li&gt;Message ordering when needed&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;system-architecture&#34;&gt;System Architecture
+&lt;/h2&gt;&lt;h3 id=&#34;high-level-components&#34;&gt;High-Level Components
+&lt;/h3&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;[Client Apps] → [API Gateway]
+                    ↓
+   [Notification Service API]
+       ↓          ↓           ↓
+[Push Service][SMS Service][Email Service]
+       ↓          ↓           ↓
+[Push Providers][SMS Providers][Email Providers]
+&lt;/code&gt;&lt;/pre&gt;&lt;h3 id=&#34;key-components&#34;&gt;Key Components
+&lt;/h3&gt;&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;API Gateway&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Rate limiting, authentication, load balancing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Notification Service API&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Request validation&lt;/li&gt;
+&lt;li&gt;Notification routing&lt;/li&gt;
+&lt;li&gt;Template rendering&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Channel-specific Services&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Provider selection and fallback&lt;/li&gt;
+&lt;li&gt;Delivery optimization&lt;/li&gt;
+&lt;li&gt;Channel-specific formatting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Message Queue&lt;/strong&gt;&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Kafka or RabbitMQ for guaranteed delivery&lt;/li&gt;
+&lt;li&gt;Separate queues per channel and priority&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;data-model&#34;&gt;Data Model
+&lt;/h2&gt;&lt;pre tabindex=&#34;0&#34;&gt;&lt;code&gt;Notification {
+  id: UUID
+  user_id: UUID
+  type: ENUM(PUSH, SMS, EMAIL)
+  template_id: UUID
+  template_data: JSON
+  status: ENUM(QUEUED, SENT, DELIVERED, FAILED)
+  created_at: Timestamp
+  scheduled_for: Timestamp
+  completed_at: Timestamp
+}
+
+Template {
+  id: UUID
+  name: String
+  content: String
+  variables: JSON
+  channel: ENUM(PUSH, SMS, EMAIL)
+}
+&lt;/code&gt;&lt;/pre&gt;&lt;h2 id=&#34;scaling-considerations&#34;&gt;Scaling Considerations
+&lt;/h2&gt;&lt;h3 id=&#34;horizontal-scaling&#34;&gt;Horizontal Scaling
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Stateless services for easy scaling&lt;/li&gt;
+&lt;li&gt;Sharding by user_id or region&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;rate-limiting&#34;&gt;Rate Limiting
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Per-user rate limits&lt;/li&gt;
+&lt;li&gt;Global rate limiting&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;idempotency&#34;&gt;Idempotency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Idempotency keys for safe retries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;failure-handling&#34;&gt;Failure Handling
+&lt;/h2&gt;&lt;h3 id=&#34;provider-outages&#34;&gt;Provider Outages
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Multiple provider support per channel&lt;/li&gt;
+&lt;li&gt;Circuit breakers for failing providers&lt;/li&gt;
+&lt;li&gt;Retry mechanisms with exponential backoff&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-persistence&#34;&gt;Message Persistence
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Store messages in durable storage before processing&lt;/li&gt;
+&lt;li&gt;Dead letter queues for failed deliveries&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;monitoring-and-alerting&#34;&gt;Monitoring and Alerting
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Track delivery rates, latency, error rates&lt;/li&gt;
+&lt;li&gt;Alert on abnormal failure rates&lt;/li&gt;
+&lt;li&gt;Monitor queue depths&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;cost-optimization&#34;&gt;Cost Optimization
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Batch notifications where possible&lt;/li&gt;
+&lt;li&gt;Intelligent provider selection based on cost&lt;/li&gt;
+&lt;li&gt;Time-shifting non-urgent notifications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Databases on My Knowledge Blog</title>
+        <link>https://example.com/tags/databases/</link>
+        <description>Recent content in Databases on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/databases/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Technologies MOC</title>
+        <link>https://example.com/post/technologies-moc/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/technologies-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=74164" alt="Featured image of post Technologies MOC" /&gt;&lt;h1 id=&#34;technologies-moc&#34;&gt;Technologies MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) organizes information about specific technologies used in modern backend systems, focusing on databases, message brokers, and related tools.&lt;/p&gt;
+&lt;h2 id=&#34;databases--caching&#34;&gt;Databases &amp;amp; Caching
+&lt;/h2&gt;&lt;h3 id=&#34;redis&#34;&gt;Redis
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Redis Overview]] - In-memory data structure store&lt;/li&gt;
+&lt;li&gt;[[Redis Use Cases]] - Common applications and scenarios&lt;/li&gt;
+&lt;li&gt;[[Redis Patterns]] - Design patterns and best practices&lt;/li&gt;
+&lt;li&gt;Related: [[Redis Commands]] in Cheat Sheets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apache-cassandra&#34;&gt;Apache Cassandra
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Cassandra Overview]] - Distributed NoSQL database&lt;/li&gt;
+&lt;li&gt;[[Cassandra Data Modeling]] - Data modeling principles and techniques&lt;/li&gt;
+&lt;li&gt;[[Cassandra Consistency Levels]] - Understanding consistency options&lt;/li&gt;
+&lt;li&gt;Related: [[Handling Cassandra Failures]] in System Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;message-brokers--streaming&#34;&gt;Message Brokers &amp;amp; Streaming
+&lt;/h2&gt;&lt;h3 id=&#34;apache-pulsar&#34;&gt;Apache Pulsar
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Pulsar Overview]] - Cloud-native messaging and streaming&lt;/li&gt;
+&lt;li&gt;[[Pulsar Producers and Consumers]] - Understanding messaging components&lt;/li&gt;
+&lt;li&gt;[[Pulsar Topic Partitioning]] - Scaling and partitioning strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-technology-areas&#34;&gt;Key Technology Areas
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-databases&#34;&gt;Distributed Databases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consistency Models&lt;/li&gt;
+&lt;li&gt;Partitioning Strategies&lt;/li&gt;
+&lt;li&gt;Replication Methods&lt;/li&gt;
+&lt;li&gt;Failure Handling&lt;/li&gt;
+&lt;li&gt;Performance Optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;caching-systems&#34;&gt;Caching Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cache Invalidation&lt;/li&gt;
+&lt;li&gt;Cache-Aside Pattern&lt;/li&gt;
+&lt;li&gt;Write-Through Cache&lt;/li&gt;
+&lt;li&gt;Cache Coherence&lt;/li&gt;
+&lt;li&gt;Distributed Caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-queue-systems&#34;&gt;Message Queue Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Message Delivery Semantics&lt;/li&gt;
+&lt;li&gt;Topic Management&lt;/li&gt;
+&lt;li&gt;Consumer Groups&lt;/li&gt;
+&lt;li&gt;Dead Letter Queues&lt;/li&gt;
+&lt;li&gt;Back Pressure Handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technology-selection-criteria&#34;&gt;Technology Selection Criteria
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Scalability Requirements&lt;/li&gt;
+&lt;li&gt;Consistency Needs&lt;/li&gt;
+&lt;li&gt;Latency Expectations&lt;/li&gt;
+&lt;li&gt;Operational Complexity&lt;/li&gt;
+&lt;li&gt;Cost Considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[010-Core Concepts MOC]] - Fundamental concepts behind these technologies&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Implementation examples&lt;/li&gt;
+&lt;li&gt;[[060-Cheat Sheets MOC]] - Quick reference guides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning-resources&#34;&gt;Learning Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Official Documentation Links&lt;/li&gt;
+&lt;li&gt;Best Practice Guides&lt;/li&gt;
+&lt;li&gt;Performance Tuning References&lt;/li&gt;
+&lt;li&gt;Community Resources&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Redis Data Structures and Use Cases</title>
+        <link>https://example.com/post/redis-data-structures/</link>
+        <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/redis-data-structures/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=16390" alt="Featured image of post Redis Data Structures and Use Cases" /&gt;&lt;h2 id=&#34;introduction-to-redis-data-structures&#34;&gt;Introduction to Redis Data Structures
+&lt;/h2&gt;&lt;p&gt;Redis is an in-memory data structure store that can be used as a database, cache, message broker, and more. Its power comes from the variety of data structures it provides and the operations available for each.&lt;/p&gt;
+&lt;h2 id=&#34;string&#34;&gt;String
+&lt;/h2&gt;&lt;p&gt;The most basic Redis data type. Strings can be text, integers, or binary data up to 512MB.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Caching HTML fragments or API responses&lt;/li&gt;
+&lt;li&gt;Counters and rate limiters&lt;/li&gt;
+&lt;li&gt;Session storage&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set and get a simple key&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SET user:1:name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John Doe&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;GET user:1:name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Increment a counter&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SET pageviews &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INCR pageviews
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;INCRBY pageviews &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;lists&#34;&gt;Lists
+&lt;/h2&gt;&lt;p&gt;Linked lists of string elements, sorted by insertion order. Good for fast addition/removal at both ends.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-1&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Task queues&lt;/li&gt;
+&lt;li&gt;Recent activity feeds&lt;/li&gt;
+&lt;li&gt;Inter-process communication&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-1&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add items to a list&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LPUSH tasks &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;send-email:1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;RPUSH tasks &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;process-payment:2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Get list elements&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LRANGE tasks &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; -1  &lt;span style=&#34;color:#75715e&#34;&gt;# Get all items&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;LPOP tasks         &lt;span style=&#34;color:#75715e&#34;&gt;# Remove and get the leftmost item&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sets&#34;&gt;Sets
+&lt;/h2&gt;&lt;p&gt;Unordered collections of unique strings with O(1) add, remove, and check operations.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-2&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Unique visitor tracking&lt;/li&gt;
+&lt;li&gt;Tagging systems&lt;/li&gt;
+&lt;li&gt;Relationship graphs&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-2&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add members to a set&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SADD tags:post:1 &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;redis&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;database&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;performance&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set operations&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SMEMBERS tags:post:1           &lt;span style=&#34;color:#75715e&#34;&gt;# Get all members&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SISMEMBER tags:post:1 &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;redis&amp;#34;&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Check membership&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;SINTER tags:post:1 tags:post:2 &lt;span style=&#34;color:#75715e&#34;&gt;# Intersection&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;sorted-sets&#34;&gt;Sorted Sets
+&lt;/h2&gt;&lt;p&gt;Similar to sets, but each element has an associated score for ordering.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-3&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Leaderboards and rankings&lt;/li&gt;
+&lt;li&gt;Priority queues&lt;/li&gt;
+&lt;li&gt;Time-series data with timestamps as scores&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-3&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add members with scores&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ZADD leaderboard &lt;span style=&#34;color:#ae81ff&#34;&gt;100&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;player:1&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ZADD leaderboard &lt;span style=&#34;color:#ae81ff&#34;&gt;200&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;player:2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Get members by rank&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ZRANGE leaderboard &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; -1 WITHSCORES
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;ZREVRANGE leaderboard &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt; &lt;span style=&#34;color:#ae81ff&#34;&gt;9&lt;/span&gt;  &lt;span style=&#34;color:#75715e&#34;&gt;# Top 10 players&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hashes&#34;&gt;Hashes
+&lt;/h2&gt;&lt;p&gt;Maps of field-value pairs, perfect for representing objects.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-4&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;User profiles&lt;/li&gt;
+&lt;li&gt;Configuration settings&lt;/li&gt;
+&lt;li&gt;Inventory items&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-4&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Set multiple fields&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HSET user:1 name &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;John&amp;#34;&lt;/span&gt; email &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;john@example.com&amp;#34;&lt;/span&gt; visits &lt;span style=&#34;color:#ae81ff&#34;&gt;10&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Get fields&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HGET user:1 name
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HGETALL user:1
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;HINCRBY user:1 visits &lt;span style=&#34;color:#ae81ff&#34;&gt;1&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;streams&#34;&gt;Streams
+&lt;/h2&gt;&lt;p&gt;Append-only log data structures introduced in Redis 5.0.&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-5&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Event sourcing&lt;/li&gt;
+&lt;li&gt;Message queues with consumer groups&lt;/li&gt;
+&lt;li&gt;Activity feeds&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-5&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add entries to a stream&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XADD events * sensor &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;temperature&amp;#34;&lt;/span&gt; value &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;22.5&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Read from a stream&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;XREAD COUNT &lt;span style=&#34;color:#ae81ff&#34;&gt;2&lt;/span&gt; STREAMS events &lt;span style=&#34;color:#ae81ff&#34;&gt;0&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;hyperloglog&#34;&gt;HyperLogLog
+&lt;/h2&gt;&lt;p&gt;Probabilistic data structure for estimating cardinality (count of unique elements).&lt;/p&gt;
+&lt;h3 id=&#34;use-cases-6&#34;&gt;Use Cases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Unique visitor counting at scale&lt;/li&gt;
+&lt;li&gt;Metrics and analytics&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;example-operations-6&#34;&gt;Example Operations
+&lt;/h3&gt;&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Add elements&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PFADD visitors &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ip:192.168.1.1&amp;#34;&lt;/span&gt; &lt;span style=&#34;color:#e6db74&#34;&gt;&amp;#34;ip:192.168.1.2&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#75715e&#34;&gt;# Get estimated count of unique elements&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;PFCOUNT visitors
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;choosing-the-right-data-structure&#34;&gt;Choosing the Right Data Structure
+&lt;/h2&gt;&lt;p&gt;The choice of data structure significantly impacts application performance and code simplicity:&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;Need simple key-value storage? Use &lt;strong&gt;Strings&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need ordered elements with duplicates? Use &lt;strong&gt;Lists&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need unique elements without order? Use &lt;strong&gt;Sets&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need unique elements with ordering? Use &lt;strong&gt;Sorted Sets&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need to represent objects with fields? Use &lt;strong&gt;Hashes&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need time-ordered events with consumer groups? Use &lt;strong&gt;Streams&lt;/strong&gt;&lt;/li&gt;
+&lt;li&gt;Need to count unique items efficiently at scale? Use &lt;strong&gt;HyperLogLog&lt;/strong&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&#34;performance-considerations&#34;&gt;Performance Considerations
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Redis is single-threaded, so long-running commands can block other operations&lt;/li&gt;
+&lt;li&gt;Be careful with high-cardinality keys (like user IDs) to avoid memory fragmentation&lt;/li&gt;
+&lt;li&gt;Use pipelining and Lua scripts for atomic multi-operation transactions&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Series on My Knowledge Blog</title>
+        <link>https://example.com/series/</link>
+        <description>Recent content in Series on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 03 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/series/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Redis Deep Dive</title>
+        <link>https://example.com/series/redis-deep-dive/</link>
+        <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/series/redis-deep-dive/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>System Design Interviews</title>
+        <link>https://example.com/series/system-design-interviews/</link>
+        <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/series/system-design-interviews/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Distributed Systems Fundamentals</title>
+        <link>https://example.com/series/distributed-systems-fundamentals/</link>
+        <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/series/distributed-systems-fundamentals/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

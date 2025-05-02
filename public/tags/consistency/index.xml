@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Consistency on My Knowledge Blog</title>
+        <link>https://example.com/tags/consistency/</link>
+        <description>Recent content in Consistency on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sun, 01 Oct 2023 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/consistency/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>CAP Theorem in Distributed Systems</title>
+        <link>https://example.com/post/distributed-systems-cap-theorem/</link>
+        <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/distributed-systems-cap-theorem/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=52648" alt="Featured image of post CAP Theorem in Distributed Systems" /&gt;&lt;h2 id=&#34;what-is-the-cap-theorem&#34;&gt;What is the CAP Theorem?
+&lt;/h2&gt;&lt;p&gt;The CAP theorem, formulated by Eric Brewer in 2000, states that a distributed system cannot simultaneously provide more than two out of the following three guarantees:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Consistency&lt;/strong&gt;: Every read receives the most recent write or an error&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Availability&lt;/strong&gt;: Every request receives a non-error response&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Partition tolerance&lt;/strong&gt;: The system continues to operate despite network partitions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;why-is-it-important&#34;&gt;Why is it Important?
+&lt;/h2&gt;&lt;p&gt;In distributed systems, network partitions are a given - they will happen. So in reality, we&amp;rsquo;re choosing between consistency and availability when a partition occurs.&lt;/p&gt;
+&lt;h2 id=&#34;cap-in-practice&#34;&gt;CAP in Practice
+&lt;/h2&gt;&lt;h3 id=&#34;cp-systems-consistent--partition-tolerant&#34;&gt;CP Systems (Consistent + Partition Tolerant)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Examples: Apache HBase, MongoDB (with strong consistency settings)&lt;/li&gt;
+&lt;li&gt;These systems will return an error or timeout if a partition occurs rather than returning potentially stale data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ap-systems-available--partition-tolerant&#34;&gt;AP Systems (Available + Partition Tolerant)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Examples: Cassandra, Amazon DynamoDB&lt;/li&gt;
+&lt;li&gt;These systems will return the most recent available data, which might not be the most recent write&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;ca-systems-consistent--available&#34;&gt;CA Systems (Consistent + Available)
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Traditional relational databases like PostgreSQL in a single-node configuration&lt;/li&gt;
+&lt;li&gt;These systems aren&amp;rsquo;t partition tolerant and thus aren&amp;rsquo;t truly distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;making-the-right-choice&#34;&gt;Making the Right Choice
+&lt;/h2&gt;&lt;p&gt;The selection between consistency and availability is application-specific:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Banking systems typically choose consistency over availability&lt;/li&gt;
+&lt;li&gt;Content delivery networks usually prefer availability over consistency&lt;/li&gt;
+&lt;li&gt;Many systems use a combination approach, with different consistency levels for different operations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;beyond-cap-pacelc&#34;&gt;Beyond CAP: PACELC
+&lt;/h2&gt;&lt;p&gt;The PACELC theorem extends CAP by stating that in case of network partitioning (P), a distributed system must choose between availability (A) and consistency (C), but else (E), when the system is running normally, it can choose between latency (L) and consistency (C).&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

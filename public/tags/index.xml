@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Tags on My Knowledge Blog</title>
+        <link>https://example.com/tags/</link>
+        <description>Recent content in Tags on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>EventDriven Architecture</title>
+        <link>https://example.com/tags/eventdriven-architecture/</link>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/eventdriven-architecture/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Distributed Systems</title>
+        <link>https://example.com/tags/distributed-systems/</link>
+        <pubDate>Thu, 03 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/distributed-systems/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Flink Example</title>
+        <link>https://example.com/tags/flink-example/</link>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/flink-example/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Mini Backend</title>
+        <link>https://example.com/tags/mini-backend/</link>
+        <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/mini-backend/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Redis</title>
+        <link>https://example.com/tags/redis/</link>
+        <pubDate>Fri, 21 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/redis/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Mediahub</title>
+        <link>https://example.com/tags/mediahub/</link>
+        <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/mediahub/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Coding</title>
+        <link>https://example.com/tags/coding/</link>
+        <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/coding/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>System Design</title>
+        <link>https://example.com/tags/system-design/</link>
+        <pubDate>Mon, 17 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/system-design/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Event-Driven Architecture</title>
+        <link>https://example.com/tags/event-driven-architecture/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/event-driven-architecture/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Microservices</title>
+        <link>https://example.com/tags/microservices/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/microservices/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Navigation</title>
+        <link>https://example.com/tags/navigation/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/navigation/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Pulsar</title>
+        <link>https://example.com/tags/pulsar/</link>
+        <pubDate>Fri, 31 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/pulsar/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Cassandra</title>
+        <link>https://example.com/tags/cassandra/</link>
+        <pubDate>Mon, 30 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/cassandra/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Databases</title>
+        <link>https://example.com/tags/databases/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/databases/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Infrastructure</title>
+        <link>https://example.com/tags/infrastructure/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/infrastructure/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Interview Preparation</title>
+        <link>https://example.com/tags/interview-preparation/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/interview-preparation/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Message Brokers</title>
+        <link>https://example.com/tags/message-brokers/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/message-brokers/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Blog</title>
+        <link>https://example.com/tags/blog/</link>
+        <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/blog/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>First Post</title>
+        <link>https://example.com/tags/first-post/</link>
+        <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/first-post/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Caching</title>
+        <link>https://example.com/tags/caching/</link>
+        <pubDate>Tue, 03 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/caching/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Scalability</title>
+        <link>https://example.com/tags/scalability/</link>
+        <pubDate>Mon, 02 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/scalability/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Consistency</title>
+        <link>https://example.com/tags/consistency/</link>
+        <pubDate>Sun, 01 Oct 2023 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/consistency/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Home</title>
+        <link>https://example.com/tags/home/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/home/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>Moc</title>
+        <link>https://example.com/tags/moc/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/tags/moc/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

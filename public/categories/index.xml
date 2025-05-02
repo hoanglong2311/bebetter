@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Categories on My Knowledge Blog</title>
+        <link>https://example.com/categories/</link>
+        <description>Recent content in Categories on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 05 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/categories/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Core Concepts</title>
+        <link>https://example.com/categories/core-concepts/</link>
+        <pubDate>Sat, 05 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/core-concepts/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1509668589193-ac82806bac4e?q=80&amp;w=1752&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Core Concepts" /&gt;&lt;p&gt;Core concepts cover fundamental principles and architectural patterns in software engineering, particularly focusing on distributed systems design and implementation.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Technologies</title>
+        <link>https://example.com/categories/technologies/</link>
+        <pubDate>Wed, 02 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/technologies/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1518770660439-4636190af475?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Technologies" /&gt;&lt;p&gt;The Technologies section focuses on specific tools, platforms, and software systems used in modern backend development, with a focus on understanding their principles, use cases, and implementation details.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Projects</title>
+        <link>https://example.com/categories/projects/</link>
+        <pubDate>Mon, 31 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/projects/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1608303588026-884930af2559?q=80&amp;w=1603&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Projects" /&gt;&lt;p&gt;Projects contains content related to projects.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Daily Journal</title>
+        <link>https://example.com/categories/daily-journal/</link>
+        <pubDate>Sat, 22 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/daily-journal/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1644412447227-5a2d2890d2f2?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Daily Journal" /&gt;&lt;p&gt;Daily Journal contains content related to daily journal.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Cheat Sheets</title>
+        <link>https://example.com/categories/cheat-sheets/</link>
+        <pubDate>Thu, 06 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/cheat-sheets/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1671433215879-a1a9f285132b?q=80&amp;w=1548&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Cheat Sheets" /&gt;&lt;p&gt;Cheat Sheets contains content related to cheat sheets.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Repositories</title>
+        <link>https://example.com/categories/repositories/</link>
+        <pubDate>Wed, 26 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/repositories/</guid>
+        <description>&lt;img src="https://plus.unsplash.com/premium_photo-1730112231198-b958b5cce6c8?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Repositories" /&gt;&lt;p&gt;Repositories contains content related to repositories.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Interview Prep</title>
+        <link>https://example.com/categories/interview-prep/</link>
+        <pubDate>Thu, 20 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/interview-prep/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1507537362848-9c7e70b7b5c1?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Interview Prep" /&gt;&lt;p&gt;Interview Prep contains materials to help prepare for technical interviews, including system design challenges, coding problems, and algorithm practice with solutions and explanations.&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>Maps of Content (MOCs)</title>
+        <link>https://example.com/categories/maps-of-content/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/maps-of-content/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1619468129361-605ebea04b44?q=80&amp;w=1742&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Maps of Content (MOCs)" /&gt;</description>
+        </item>
+        <item>
+        <title>General</title>
+        <link>https://example.com/categories/general/</link>
+        <pubDate>Sun, 31 Mar 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/categories/general/</guid>
+        <description></description>
+        </item>
+        
+    </channel>
+</rss>

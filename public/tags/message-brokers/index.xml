@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Message Brokers on My Knowledge Blog</title>
+        <link>https://example.com/tags/message-brokers/</link>
+        <description>Recent content in Message Brokers on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Mon, 25 Nov 2024 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/message-brokers/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Technologies MOC</title>
+        <link>https://example.com/post/technologies-moc/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/technologies-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=74164" alt="Featured image of post Technologies MOC" /&gt;&lt;h1 id=&#34;technologies-moc&#34;&gt;Technologies MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) organizes information about specific technologies used in modern backend systems, focusing on databases, message brokers, and related tools.&lt;/p&gt;
+&lt;h2 id=&#34;databases--caching&#34;&gt;Databases &amp;amp; Caching
+&lt;/h2&gt;&lt;h3 id=&#34;redis&#34;&gt;Redis
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Redis Overview]] - In-memory data structure store&lt;/li&gt;
+&lt;li&gt;[[Redis Use Cases]] - Common applications and scenarios&lt;/li&gt;
+&lt;li&gt;[[Redis Patterns]] - Design patterns and best practices&lt;/li&gt;
+&lt;li&gt;Related: [[Redis Commands]] in Cheat Sheets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apache-cassandra&#34;&gt;Apache Cassandra
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Cassandra Overview]] - Distributed NoSQL database&lt;/li&gt;
+&lt;li&gt;[[Cassandra Data Modeling]] - Data modeling principles and techniques&lt;/li&gt;
+&lt;li&gt;[[Cassandra Consistency Levels]] - Understanding consistency options&lt;/li&gt;
+&lt;li&gt;Related: [[Handling Cassandra Failures]] in System Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;message-brokers--streaming&#34;&gt;Message Brokers &amp;amp; Streaming
+&lt;/h2&gt;&lt;h3 id=&#34;apache-pulsar&#34;&gt;Apache Pulsar
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Pulsar Overview]] - Cloud-native messaging and streaming&lt;/li&gt;
+&lt;li&gt;[[Pulsar Producers and Consumers]] - Understanding messaging components&lt;/li&gt;
+&lt;li&gt;[[Pulsar Topic Partitioning]] - Scaling and partitioning strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-technology-areas&#34;&gt;Key Technology Areas
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-databases&#34;&gt;Distributed Databases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consistency Models&lt;/li&gt;
+&lt;li&gt;Partitioning Strategies&lt;/li&gt;
+&lt;li&gt;Replication Methods&lt;/li&gt;
+&lt;li&gt;Failure Handling&lt;/li&gt;
+&lt;li&gt;Performance Optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;caching-systems&#34;&gt;Caching Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cache Invalidation&lt;/li&gt;
+&lt;li&gt;Cache-Aside Pattern&lt;/li&gt;
+&lt;li&gt;Write-Through Cache&lt;/li&gt;
+&lt;li&gt;Cache Coherence&lt;/li&gt;
+&lt;li&gt;Distributed Caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-queue-systems&#34;&gt;Message Queue Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Message Delivery Semantics&lt;/li&gt;
+&lt;li&gt;Topic Management&lt;/li&gt;
+&lt;li&gt;Consumer Groups&lt;/li&gt;
+&lt;li&gt;Dead Letter Queues&lt;/li&gt;
+&lt;li&gt;Back Pressure Handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technology-selection-criteria&#34;&gt;Technology Selection Criteria
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Scalability Requirements&lt;/li&gt;
+&lt;li&gt;Consistency Needs&lt;/li&gt;
+&lt;li&gt;Latency Expectations&lt;/li&gt;
+&lt;li&gt;Operational Complexity&lt;/li&gt;
+&lt;li&gt;Cost Considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[010-Core Concepts MOC]] - Fundamental concepts behind these technologies&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Implementation examples&lt;/li&gt;
+&lt;li&gt;[[060-Cheat Sheets MOC]] - Quick reference guides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning-resources&#34;&gt;Learning Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Official Documentation Links&lt;/li&gt;
+&lt;li&gt;Best Practice Guides&lt;/li&gt;
+&lt;li&gt;Performance Tuning References&lt;/li&gt;
+&lt;li&gt;Community Resources&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

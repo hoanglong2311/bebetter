@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Navigation on My Knowledge Blog</title>
+        <link>https://example.com/tags/navigation/</link>
+        <description>Recent content in Navigation on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 15 Feb 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/navigation/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Core Concepts MOC</title>
+        <link>https://example.com/post/core-concepts-moc/</link>
+        <pubDate>Sat, 15 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/core-concepts-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=70734" alt="Featured image of post Core Concepts MOC" /&gt;&lt;h1 id=&#34;core-concepts-moc&#34;&gt;Core Concepts MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) serves as a central hub for fundamental technical concepts in distributed systems, microservices, and event-driven architecture.&lt;/p&gt;
+&lt;h2 id=&#34;distributed-systems&#34;&gt;Distributed Systems
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[CAP Theorem]] - Understanding the trade-offs between Consistency, Availability, and Partition Tolerance&lt;/li&gt;
+&lt;li&gt;[[Consistency Models]] - Strong, eventual, and causal consistency&lt;/li&gt;
+&lt;li&gt;[[Partitioning and Sharding]] - Strategies for distributing data across multiple nodes&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;microservices-architecture&#34;&gt;Microservices Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Service Discovery]] - How services find and communicate with each other&lt;/li&gt;
+&lt;li&gt;[[API Gateways]] - Central entry point for client applications&lt;/li&gt;
+&lt;li&gt;[[Circuit Breakers]] - Handling failures gracefully in distributed systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;event-driven-architecture&#34;&gt;Event-Driven Architecture
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[Event Sourcing]] - Using events as the source of truth&lt;/li&gt;
+&lt;li&gt;[[CQRS]] - Command Query Responsibility Segregation&lt;/li&gt;
+&lt;li&gt;[[Message Brokers]] - Understanding message queues and pub/sub systems&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-concepts-by-topic&#34;&gt;Key Concepts by Topic
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-systems-fundamentals&#34;&gt;Distributed Systems Fundamentals
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consensus Algorithms&lt;/li&gt;
+&lt;li&gt;Distributed Transactions&lt;/li&gt;
+&lt;li&gt;Replication Strategies&lt;/li&gt;
+&lt;li&gt;Failure Detection&lt;/li&gt;
+&lt;li&gt;Clock Synchronization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microservices-patterns&#34;&gt;Microservices Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Service Mesh&lt;/li&gt;
+&lt;li&gt;Backend for Frontend (BFF)&lt;/li&gt;
+&lt;li&gt;Bulkhead Pattern&lt;/li&gt;
+&lt;li&gt;Sidecar Pattern&lt;/li&gt;
+&lt;li&gt;Database per Service&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;event-driven-patterns&#34;&gt;Event-Driven Patterns
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Event-Driven Integration&lt;/li&gt;
+&lt;li&gt;Event Streaming&lt;/li&gt;
+&lt;li&gt;Event Sourcing&lt;/li&gt;
+&lt;li&gt;Saga Pattern&lt;/li&gt;
+&lt;li&gt;Outbox Pattern&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[020-Technologies MOC]] - Specific technologies implementing these concepts&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Code examples and implementations&lt;/li&gt;
+&lt;li&gt;[[040-Projects MOC]] - Projects utilizing these concepts&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;resources-and-references&#34;&gt;Resources and References
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Distributed Systems by Martin Kleppmann&lt;/li&gt;
+&lt;li&gt;Building Microservices by Sam Newman&lt;/li&gt;
+&lt;li&gt;Designing Data-Intensive Applications&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Interview Prep MOC</title>
+        <link>https://example.com/post/interview-prep-moc/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/interview-prep-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=47206" alt="Featured image of post Interview Prep MOC" /&gt;&lt;h1 id=&#34;interview-prep-moc&#34;&gt;Interview Prep MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) organizes interview preparation materials for backend engineering positions, focusing on system design and coding challenges.&lt;/p&gt;
+&lt;h2 id=&#34;system-design&#34;&gt;System Design
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-systems-design&#34;&gt;Distributed Systems Design
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Scaling Notification Service]] - Designing a scalable notification system&lt;/li&gt;
+&lt;li&gt;[[Handling Cassandra Failures]] - Failure handling in distributed databases&lt;/li&gt;
+&lt;li&gt;[[Rate Limiter Design]] - Building a distributed rate limiter&lt;/li&gt;
+&lt;li&gt;[[Message Queue System]] - Designing a message broker&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-systems&#34;&gt;Data Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Database Sharding Strategies]] - Approaches to data partitioning&lt;/li&gt;
+&lt;li&gt;[[Cache System Design]] - Designing caching layers&lt;/li&gt;
+&lt;li&gt;[[Search Engine Architecture]] - Building search systems&lt;/li&gt;
+&lt;li&gt;[[Real-time Analytics Pipeline]] - Processing streaming data&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;microservices&#34;&gt;Microservices
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[API Gateway Design]] - Designing API gateways&lt;/li&gt;
+&lt;li&gt;[[Service Discovery Implementation]] - Service discovery patterns&lt;/li&gt;
+&lt;li&gt;[[Authentication System]] - Auth service architecture&lt;/li&gt;
+&lt;li&gt;[[Payment Processing System]] - Handling distributed transactions&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;coding-problems&#34;&gt;Coding Problems
+&lt;/h2&gt;&lt;h3 id=&#34;concurrency&#34;&gt;Concurrency
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Go Concurrency Problems]] - Common concurrency patterns&lt;/li&gt;
+&lt;li&gt;[[Thread Safety]] - Thread synchronization&lt;/li&gt;
+&lt;li&gt;[[Deadlock Prevention]] - Handling deadlocks&lt;/li&gt;
+&lt;li&gt;[[Worker Pool Implementation]] - Concurrent task processing&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;data-structures&#34;&gt;Data Structures
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Hash Table Implementation]] - Custom hash table design&lt;/li&gt;
+&lt;li&gt;[[LRU Cache]] - Implementing LRU cache&lt;/li&gt;
+&lt;li&gt;[[Consistent Hashing]] - Distributed hash table&lt;/li&gt;
+&lt;li&gt;[[Trie Implementation]] - Prefix tree patterns&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;algorithms&#34;&gt;Algorithms
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Graph Algorithms]] - Common graph problems&lt;/li&gt;
+&lt;li&gt;[[Dynamic Programming]] - DP patterns&lt;/li&gt;
+&lt;li&gt;[[System Design Patterns]] - Common design patterns&lt;/li&gt;
+&lt;li&gt;[[Distributed Algorithms]] - Consensus algorithms&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;interview-topics&#34;&gt;Interview Topics
+&lt;/h2&gt;&lt;h3 id=&#34;core-knowledge&#34;&gt;Core Knowledge
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Distributed Systems Fundamentals]]&lt;/li&gt;
+&lt;li&gt;[[Database Internals]]&lt;/li&gt;
+&lt;li&gt;[[Network Protocols]]&lt;/li&gt;
+&lt;li&gt;[[Operating Systems]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;best-practices&#34;&gt;Best Practices
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Code Review Guidelines]]&lt;/li&gt;
+&lt;li&gt;[[System Design Principles]]&lt;/li&gt;
+&lt;li&gt;[[Performance Optimization]]&lt;/li&gt;
+&lt;li&gt;[[Scalability Patterns]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;practice-resources&#34;&gt;Practice Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[System Design Templates]]&lt;/li&gt;
+&lt;li&gt;[[Common Interview Questions]]&lt;/li&gt;
+&lt;li&gt;[[Code Examples]]&lt;/li&gt;
+&lt;li&gt;[[Design Pattern Examples]]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[010-Core Concepts MOC]] - Fundamental concepts&lt;/li&gt;
+&lt;li&gt;[[020-Technologies MOC]] - Technology deep-dives&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Real-world implementations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning-resources&#34;&gt;Learning Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;System Design Interview Books&lt;/li&gt;
+&lt;li&gt;LeetCode Problem Solutions&lt;/li&gt;
+&lt;li&gt;Architecture Case Studies&lt;/li&gt;
+&lt;li&gt;Best Practice Guidelines&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        <item>
+        <title>Technologies MOC</title>
+        <link>https://example.com/post/technologies-moc/</link>
+        <pubDate>Mon, 25 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/technologies-moc/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=74164" alt="Featured image of post Technologies MOC" /&gt;&lt;h1 id=&#34;technologies-moc&#34;&gt;Technologies MOC
+&lt;/h1&gt;&lt;p&gt;This Map of Content (MOC) organizes information about specific technologies used in modern backend systems, focusing on databases, message brokers, and related tools.&lt;/p&gt;
+&lt;h2 id=&#34;databases--caching&#34;&gt;Databases &amp;amp; Caching
+&lt;/h2&gt;&lt;h3 id=&#34;redis&#34;&gt;Redis
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Redis Overview]] - In-memory data structure store&lt;/li&gt;
+&lt;li&gt;[[Redis Use Cases]] - Common applications and scenarios&lt;/li&gt;
+&lt;li&gt;[[Redis Patterns]] - Design patterns and best practices&lt;/li&gt;
+&lt;li&gt;Related: [[Redis Commands]] in Cheat Sheets&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;apache-cassandra&#34;&gt;Apache Cassandra
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Cassandra Overview]] - Distributed NoSQL database&lt;/li&gt;
+&lt;li&gt;[[Cassandra Data Modeling]] - Data modeling principles and techniques&lt;/li&gt;
+&lt;li&gt;[[Cassandra Consistency Levels]] - Understanding consistency options&lt;/li&gt;
+&lt;li&gt;Related: [[Handling Cassandra Failures]] in System Design&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;message-brokers--streaming&#34;&gt;Message Brokers &amp;amp; Streaming
+&lt;/h2&gt;&lt;h3 id=&#34;apache-pulsar&#34;&gt;Apache Pulsar
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;[[Pulsar Overview]] - Cloud-native messaging and streaming&lt;/li&gt;
+&lt;li&gt;[[Pulsar Producers and Consumers]] - Understanding messaging components&lt;/li&gt;
+&lt;li&gt;[[Pulsar Topic Partitioning]] - Scaling and partitioning strategies&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;key-technology-areas&#34;&gt;Key Technology Areas
+&lt;/h2&gt;&lt;h3 id=&#34;distributed-databases&#34;&gt;Distributed Databases
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Consistency Models&lt;/li&gt;
+&lt;li&gt;Partitioning Strategies&lt;/li&gt;
+&lt;li&gt;Replication Methods&lt;/li&gt;
+&lt;li&gt;Failure Handling&lt;/li&gt;
+&lt;li&gt;Performance Optimization&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;caching-systems&#34;&gt;Caching Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Cache Invalidation&lt;/li&gt;
+&lt;li&gt;Cache-Aside Pattern&lt;/li&gt;
+&lt;li&gt;Write-Through Cache&lt;/li&gt;
+&lt;li&gt;Cache Coherence&lt;/li&gt;
+&lt;li&gt;Distributed Caching&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;message-queue-systems&#34;&gt;Message Queue Systems
+&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;Message Delivery Semantics&lt;/li&gt;
+&lt;li&gt;Topic Management&lt;/li&gt;
+&lt;li&gt;Consumer Groups&lt;/li&gt;
+&lt;li&gt;Dead Letter Queues&lt;/li&gt;
+&lt;li&gt;Back Pressure Handling&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;technology-selection-criteria&#34;&gt;Technology Selection Criteria
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Scalability Requirements&lt;/li&gt;
+&lt;li&gt;Consistency Needs&lt;/li&gt;
+&lt;li&gt;Latency Expectations&lt;/li&gt;
+&lt;li&gt;Operational Complexity&lt;/li&gt;
+&lt;li&gt;Cost Considerations&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;related-mocs&#34;&gt;Related MOCs
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;[[010-Core Concepts MOC]] - Fundamental concepts behind these technologies&lt;/li&gt;
+&lt;li&gt;[[030-Repositories MOC]] - Implementation examples&lt;/li&gt;
+&lt;li&gt;[[060-Cheat Sheets MOC]] - Quick reference guides&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;learning-resources&#34;&gt;Learning Resources
+&lt;/h2&gt;&lt;ul&gt;
+&lt;li&gt;Official Documentation Links&lt;/li&gt;
+&lt;li&gt;Best Practice Guides&lt;/li&gt;
+&lt;li&gt;Performance Tuning References&lt;/li&gt;
+&lt;li&gt;Community Resources&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

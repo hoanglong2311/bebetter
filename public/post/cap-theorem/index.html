@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en-us" dir="ltr">
+    <head><meta charset='utf-8'>
+<meta name='viewport' content='width=device-width, initial-scale=1'><meta name='description' content="CAP Theorem The CAP theorem is a fundamental principle in distributed systems that states it is impossible for a distributed system to simultaneously provide more than two out of three guarantees:\nConsistency (C): All nodes see the same data at the same time Availability (A): Every request receives a response Partition Tolerance (P): The system continues to operate despite network partitions Understanding the Trade-offs CA Systems (Sacrificing Partition Tolerance) Traditional RDBMS (single node) Not realistic for distributed systems Example: PostgreSQL in single-node mode CP Systems (Sacrificing Availability) Systems that prioritize consistency over availability Will become unavailable during partitions Examples: MongoDB (in strong consistency mode) Apache HBase Redis (in cluster mode with sync replication) AP Systems (Sacrificing Consistency) Systems that prioritize availability over consistency May return stale/inconsistent data during partitions Examples: Apache Cassandra Amazon DynamoDB Redis (in cluster mode with async replication) Practical Implications When to Choose CP Financial transactions Inventory management User authentication Any system where consistency is critical When to Choose AP Content delivery Social media feeds Product catalogs Systems that can tolerate eventual consistency Real-world Examples In Our Systems [[Redis Cache Layer]] - CP configuration for session management [[Cassandra Data Modeling]] - AP configuration for content storage Related: [[101b-Consistency Models]] for detailed consistency patterns Best Practices Understand your use case requirements Consider the network environment Plan for failure scenarios Implement appropriate monitoring Document consistency guarantees Related Concepts [[101b-Consistency Models]] - Different types of consistency [[101c-Partitioning and Sharding]] - Data distribution strategies [[Handling Cassandra Failures]] - Real-world partition handling Further Reading &ldquo;Designing Data-Intensive Applications&rdquo; by Martin Kleppmann &ldquo;CAP Twelve Years Later: How the &lsquo;Rules&rsquo; Have Changed&rdquo; [[Distributed Systems Fundamentals]] for more core concepts ">
+<title>CAP Theorem</title>
+
+<link rel='canonical' href='https://example.com/post/cap-theorem/'>
+
+<link rel="stylesheet" href="/scss/style.min.663803bebe609202d5b39d848f2d7c2dc8b598a2d879efa079fa88893d29c49c.css"><meta property='og:title' content="CAP Theorem">
+<meta property='og:description' content="CAP Theorem The CAP theorem is a fundamental principle in distributed systems that states it is impossible for a distributed system to simultaneously provide more than two out of three guarantees:\nConsistency (C): All nodes see the same data at the same time Availability (A): Every request receives a response Partition Tolerance (P): The system continues to operate despite network partitions Understanding the Trade-offs CA Systems (Sacrificing Partition Tolerance) Traditional RDBMS (single node) Not realistic for distributed systems Example: PostgreSQL in single-node mode CP Systems (Sacrificing Availability) Systems that prioritize consistency over availability Will become unavailable during partitions Examples: MongoDB (in strong consistency mode) Apache HBase Redis (in cluster mode with sync replication) AP Systems (Sacrificing Consistency) Systems that prioritize availability over consistency May return stale/inconsistent data during partitions Examples: Apache Cassandra Amazon DynamoDB Redis (in cluster mode with async replication) Practical Implications When to Choose CP Financial transactions Inventory management User authentication Any system where consistency is critical When to Choose AP Content delivery Social media feeds Product catalogs Systems that can tolerate eventual consistency Real-world Examples In Our Systems [[Redis Cache Layer]] - CP configuration for session management [[Cassandra Data Modeling]] - AP configuration for content storage Related: [[101b-Consistency Models]] for detailed consistency patterns Best Practices Understand your use case requirements Consider the network environment Plan for failure scenarios Implement appropriate monitoring Document consistency guarantees Related Concepts [[101b-Consistency Models]] - Different types of consistency [[101c-Partitioning and Sharding]] - Data distribution strategies [[Handling Cassandra Failures]] - Real-world partition handling Further Reading &ldquo;Designing Data-Intensive Applications&rdquo; by Martin Kleppmann &ldquo;CAP Twelve Years Later: How the &lsquo;Rules&rsquo; Have Changed&rdquo; [[Distributed Systems Fundamentals]] for more core concepts ">
+<meta property='og:url' content='https://example.com/post/cap-theorem/'>
+<meta property='og:site_name' content='My Knowledge Blog'>
+<meta property='og:type' content='article'><meta property='article:section' content='Post' /><meta property='article:tag' content='Distributed Systems' /><meta property='article:published_time' content='2025-03-02T00:00:00&#43;00:00'/><meta property='article:modified_time' content='2025-03-02T00:00:00&#43;00:00'/><meta property='og:image' content='https://source.unsplash.com/random/1600x900?cachebust=67897' />
+<meta name="twitter:title" content="CAP Theorem">
+<meta name="twitter:description" content="CAP Theorem The CAP theorem is a fundamental principle in distributed systems that states it is impossible for a distributed system to simultaneously provide more than two out of three guarantees:\nConsistency (C): All nodes see the same data at the same time Availability (A): Every request receives a response Partition Tolerance (P): The system continues to operate despite network partitions Understanding the Trade-offs CA Systems (Sacrificing Partition Tolerance) Traditional RDBMS (single node) Not realistic for distributed systems Example: PostgreSQL in single-node mode CP Systems (Sacrificing Availability) Systems that prioritize consistency over availability Will become unavailable during partitions Examples: MongoDB (in strong consistency mode) Apache HBase Redis (in cluster mode with sync replication) AP Systems (Sacrificing Consistency) Systems that prioritize availability over consistency May return stale/inconsistent data during partitions Examples: Apache Cassandra Amazon DynamoDB Redis (in cluster mode with async replication) Practical Implications When to Choose CP Financial transactions Inventory management User authentication Any system where consistency is critical When to Choose AP Content delivery Social media feeds Product catalogs Systems that can tolerate eventual consistency Real-world Examples In Our Systems [[Redis Cache Layer]] - CP configuration for session management [[Cassandra Data Modeling]] - AP configuration for content storage Related: [[101b-Consistency Models]] for detailed consistency patterns Best Practices Understand your use case requirements Consider the network environment Plan for failure scenarios Implement appropriate monitoring Document consistency guarantees Related Concepts [[101b-Consistency Models]] - Different types of consistency [[101c-Partitioning and Sharding]] - Data distribution strategies [[Handling Cassandra Failures]] - Real-world partition handling Further Reading &ldquo;Designing Data-Intensive Applications&rdquo; by Martin Kleppmann &ldquo;CAP Twelve Years Later: How the &lsquo;Rules&rsquo; Have Changed&rdquo; [[Distributed Systems Fundamentals]] for more core concepts "><meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content='https://source.unsplash.com/random/1600x900?cachebust=67897' />
+    <link rel="shortcut icon" href="/favicon.ico" />
+
+    </head>
+    <body class="
+    article-page
+    ">
+    <script>
+        (function() {
+            const colorSchemeKey = 'StackColorScheme';
+            if(!localStorage.getItem(colorSchemeKey)){
+                localStorage.setItem(colorSchemeKey, "auto");
+            }
+        })();
+    </script><script>
+    (function() {
+        const colorSchemeKey = 'StackColorScheme';
+        const colorSchemeItem = localStorage.getItem(colorSchemeKey);
+        const supportDarkMode = window.matchMedia('(prefers-color-scheme: dark)').matches === true;
+
+        if (colorSchemeItem == 'dark' || colorSchemeItem === 'auto' && supportDarkMode) {
+            
+
+            document.documentElement.dataset.scheme = 'dark';
+        } else {
+            document.documentElement.dataset.scheme = 'light';
+        }
+    })();
+</script>
+<div class="container main-container flex on-phone--column extended"><aside class="sidebar left-sidebar sticky ">
+    <button class="hamburger hamburger--spin" type="button" id="toggle-menu" aria-label="Toggle Menu">
+        <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+        </span>
+    </button>
+
+    <header>
+        
+            
+            <figure class="site-avatar">
+                <a href="/">
+                
+                    
+                    
+                    
+                        
+                        <img src="/img/avatar_hu_f263afb78ec8a28e.jpg" width="300"
+                            height="400" class="site-logo" loading="lazy" alt="Avatar">
+                    
+                
+                </a>
+                
+                    <span class="emoji">👋</span>
+                
+            </figure>
+            
+        
+        
+        <div class="site-meta">
+            <h1 class="site-name"><a href="/">My Knowledge Blog</a></h1>
+            <h2 class="site-description">Sharing what I learn</h2>
+        </div>
+    </header><ol class="menu" id="main-menu">
+        
+        
+        
+        <li >
+            <a href='/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-home" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <polyline points="5 12 3 12 12 3 21 12 19 12" />
+  <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
+  <path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" />
+</svg>
+
+
+
+                
+                <span>Home</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/about' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="7" r="4" />
+  <path d="M6 21v-2a4 4 0 0 1 4 -4h4a4 4 0 0 1 4 4v2" />
+</svg>
+
+
+
+                
+                <span>About</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/blog-guide' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Blog Guide</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/archives/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-archive" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <rect x="3" y="4" width="18" height="4" rx="2" />
+  <path d="M5 8v10a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-10" />
+  <line x1="10" y1="12" x2="14" y2="12" />
+</svg>
+
+
+
+                
+                <span>Archives</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/maps-of-content' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Maps of Content</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/core-concepts' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-messages" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M21 14l-3 -3h-7a1 1 0 0 1 -1 -1v-6a1 1 0 0 1 1 -1h9a1 1 0 0 1 1 1v10" />
+  <path d="M14 15v2a1 1 0 0 1 -1 1h-7l-3 3v-10a1 1 0 0 1 1 -1h2" />
+</svg>
+
+
+
+                
+                <span>Core Concepts</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/search/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-search" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="10" cy="10" r="7" />
+  <line x1="21" y1="21" x2="15" y2="15" />
+</svg>
+
+
+
+                
+                <span>Search</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/technologies' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-infinity" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M9.828 9.172a4 4 0 1 0 0 5.656 a10 10 0 0 0 2.172 -2.828a10 10 0 0 1 2.172 -2.828 a4 4 0 1 1 0 5.656a10 10 0 0 1 -2.172 -2.828a10 10 0 0 0 -2.172 -2.828" />
+</svg>
+
+
+
+                
+                <span>Technologies</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/categories/interview-prep' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <line x1="5" y1="9" x2="19" y2="9" />
+  <line x1="5" y1="15" x2="19" y2="15" />
+  <line x1="11" y1="4" x2="7" y2="20" />
+  <line x1="17" y1="4" x2="13" y2="20" />
+</svg>
+
+
+
+                
+                <span>Interview Prep</span>
+            </a>
+        </li>
+        
+        
+        <li >
+            <a href='/page/all-content/' >
+                
+                
+                
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-tag" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11 3L20 12a1.5 1.5 0 0 1 0 2L14 20a1.5 1.5 0 0 1 -2 0L3 11v-4a4 4 0 0 1 4 -4h4" />
+  <circle cx="9" cy="9" r="2" />
+</svg>
+
+
+
+                
+                <span>All Content</span>
+            </a>
+        </li>
+        
+        <li class="menu-bottom-section">
+            <ol class="menu">
+
+                
+                    <li id="dark-mode-toggle">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="8" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-toggle-right" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="16" cy="12" r="2" />
+  <rect x="2" y="6" width="20" height="12" rx="6" />
+</svg>
+
+
+
+                        <span>Dark Mode</span>
+                    </li>
+                
+            </ol>
+        </li>
+    </ol>
+</aside>
+
+    
+
+            <main class="main full-width">
+    <article class="has-image main-article">
+    <header class="article-header">
+        <div class="article-image">
+            <a href="/post/cap-theorem/">
+                
+                    <img src="https://source.unsplash.com/random/1600x900?cachebust=67897" loading="lazy" alt="Featured image of post CAP Theorem" />
+                
+            </a>
+        </div>
+    
+
+    <div class="article-details">
+    
+    <header class="article-category">
+        
+            <a href="/categories/core-concepts/" style="background-color: #e76f51; color: #fff;">
+                Core Concepts
+            </a>
+        
+    </header>
+    
+
+    <div class="article-title-wrapper">
+        <h2 class="article-title">
+            <a href="/post/cap-theorem/">CAP Theorem</a>
+        </h2>
+    
+        
+    </div>
+
+    
+    
+    
+    
+    <footer class="article-time">
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
+  <circle cx="18" cy="18" r="4" />
+  <path d="M15 3v4" />
+  <path d="M7 3v4" />
+  <path d="M3 11h16" />
+  <path d="M18 16.496v1.504l1 1" />
+</svg>
+                <time class="article-time--published">Mar 02, 2025</time>
+            </div>
+        
+
+        
+            <div>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z"/>
+  <circle cx="12" cy="12" r="9" />
+  <polyline points="12 7 12 12 15 15" />
+</svg>
+
+
+
+                <time class="article-time--reading">
+                    2 minute read
+                </time>
+            </div>
+        
+    </footer>
+    
+
+    
+</div>
+
+</header>
+
+    <section class="article-content">
+    
+    
+    <h1 id="cap-theorem">CAP Theorem
+</h1><p>The CAP theorem is a fundamental principle in distributed systems that states it is impossible for a distributed system to simultaneously provide more than two out of three guarantees:</p>
+<ul>
+<li><strong>Consistency (C)</strong>: All nodes see the same data at the same time</li>
+<li><strong>Availability (A)</strong>: Every request receives a response</li>
+<li><strong>Partition Tolerance (P)</strong>: The system continues to operate despite network partitions</li>
+</ul>
+<h2 id="understanding-the-trade-offs">Understanding the Trade-offs
+</h2><h3 id="ca-systems-sacrificing-partition-tolerance">CA Systems (Sacrificing Partition Tolerance)
+</h3><ul>
+<li>Traditional RDBMS (single node)</li>
+<li>Not realistic for distributed systems</li>
+<li>Example: PostgreSQL in single-node mode</li>
+</ul>
+<h3 id="cp-systems-sacrificing-availability">CP Systems (Sacrificing Availability)
+</h3><ul>
+<li>Systems that prioritize consistency over availability</li>
+<li>Will become unavailable during partitions</li>
+<li>Examples:
+<ul>
+<li>MongoDB (in strong consistency mode)</li>
+<li>Apache HBase</li>
+<li>Redis (in cluster mode with sync replication)</li>
+</ul>
+</li>
+</ul>
+<h3 id="ap-systems-sacrificing-consistency">AP Systems (Sacrificing Consistency)
+</h3><ul>
+<li>Systems that prioritize availability over consistency</li>
+<li>May return stale/inconsistent data during partitions</li>
+<li>Examples:
+<ul>
+<li>Apache Cassandra</li>
+<li>Amazon DynamoDB</li>
+<li>Redis (in cluster mode with async replication)</li>
+</ul>
+</li>
+</ul>
+<h2 id="practical-implications">Practical Implications
+</h2><h3 id="when-to-choose-cp">When to Choose CP
+</h3><ul>
+<li>Financial transactions</li>
+<li>Inventory management</li>
+<li>User authentication</li>
+<li>Any system where consistency is critical</li>
+</ul>
+<h3 id="when-to-choose-ap">When to Choose AP
+</h3><ul>
+<li>Content delivery</li>
+<li>Social media feeds</li>
+<li>Product catalogs</li>
+<li>Systems that can tolerate eventual consistency</li>
+</ul>
+<h2 id="real-world-examples">Real-world Examples
+</h2><h3 id="in-our-systems">In Our Systems
+</h3><ul>
+<li>[[Redis Cache Layer]] - CP configuration for session management</li>
+<li>[[Cassandra Data Modeling]] - AP configuration for content storage</li>
+<li>Related: [[101b-Consistency Models]] for detailed consistency patterns</li>
+</ul>
+<h2 id="best-practices">Best Practices
+</h2><ol>
+<li>Understand your use case requirements</li>
+<li>Consider the network environment</li>
+<li>Plan for failure scenarios</li>
+<li>Implement appropriate monitoring</li>
+<li>Document consistency guarantees</li>
+</ol>
+<h2 id="related-concepts">Related Concepts
+</h2><ul>
+<li>[[101b-Consistency Models]] - Different types of consistency</li>
+<li>[[101c-Partitioning and Sharding]] - Data distribution strategies</li>
+<li>[[Handling Cassandra Failures]] - Real-world partition handling</li>
+</ul>
+<h2 id="further-reading">Further Reading
+</h2><ul>
+<li>&ldquo;Designing Data-Intensive Applications&rdquo; by Martin Kleppmann</li>
+<li>&ldquo;CAP Twelve Years Later: How the &lsquo;Rules&rsquo; Have Changed&rdquo;</li>
+<li>[[Distributed Systems Fundamentals]] for more core concepts</li>
+</ul>
+
+</section>
+
+
+    <footer class="article-footer">
+    
+    <section class="article-tags">
+        
+            <a href="/tags/distributed-systems/">Distributed Systems</a>
+        
+    </section>
+
+
+    </footer>
+
+
+    
+</article>
+
+    
+
+    
+
+<aside class="related-content--wrapper">
+    <h2 class="section-title">Related content</h2>
+    <div class="related-content">
+        <div class="flex article-list--tile">
+            
+                
+<article class="has-image">
+    <a href="/post/core-concepts-moc/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://source.unsplash.com/random/1600x900?cachebust=70734" loading="lazy" data-key="" data-hash="https://source.unsplash.com/random/1600x900?cachebust=70734"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Core Concepts MOC</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/partitioning-and-sharding/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://source.unsplash.com/random/1600x900?cachebust=94967" loading="lazy" data-key="" data-hash="https://source.unsplash.com/random/1600x900?cachebust=94967"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">Partitioning and Sharding</h2>
+        </div>
+    </a>
+</article>
+
+            
+                
+<article class="has-image">
+    <a href="/post/distributed-systems-cap-theorem/">
+        
+        
+            <div class="article-image">
+                
+                    <img src="https://source.unsplash.com/random/1600x900?cachebust=52648" loading="lazy" data-key="" data-hash="https://source.unsplash.com/random/1600x900?cachebust=52648"/>
+                
+            </div>
+        
+
+        <div class="article-details">
+            <h2 class="article-title">CAP Theorem in Distributed Systems</h2>
+        </div>
+    </a>
+</article>
+
+            
+        </div>
+    </div>
+</aside>
+
+     
+    
+        
+    
+
+    <footer class="site-footer">
+    <section class="copyright">
+        &copy; 
+        
+            2024 - 
+        
+        2025 My Knowledge Blog
+    </section>
+    
+    <section class="powerby">
+        Built with <a href="https://gohugo.io/" target="_blank" rel="noopener">Hugo</a> <br />
+        Theme <b><a href="https://github.com/CaiJimmy/hugo-theme-stack" target="_blank" rel="noopener" data-version="3.30.0">Stack</a></b> designed by <a href="https://jimmycai.com" target="_blank" rel="noopener">Jimmy</a>
+    </section>
+</footer>
+
+
+    
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+
+    
+    <div class="pswp__bg"></div>
+
+    
+    <div class="pswp__scroll-wrap">
+
+        
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+
+        
+        <div class="pswp__ui pswp__ui--hidden">
+
+            <div class="pswp__top-bar">
+
+                
+
+                <div class="pswp__counter"></div>
+
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+
+                
+                
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                        <div class="pswp__preloader__cut">
+                            <div class="pswp__preloader__donut"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div>
+            </div>
+
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+
+        </div>
+
+    </div>
+
+</div><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js"integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo="crossorigin="anonymous"
+                defer
+                >
+            </script><script 
+                src="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js"integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU="crossorigin="anonymous"
+                defer
+                >
+            </script><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.min.css"crossorigin="anonymous"
+            ><link 
+                rel="stylesheet" 
+                href="https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.css"crossorigin="anonymous"
+            >
+
+            </main>
+        </div>
+        <script 
+                src="https://cdn.jsdelivr.net/npm/node-vibrant@3.1.6/dist/vibrant.min.js"integrity="sha256-awcR2jno4kI5X0zL8ex0vi2z&#43;KMkF24hUW8WePSA9HM="crossorigin="anonymous"
+                
+                >
+            </script><script type="text/javascript" src="/ts/main.1e9a3bafd846ced4c345d084b355fb8c7bae75701c338f8a1f8a82c780137826.js" defer></script>
+<script>
+    (function () {
+        const customFont = document.createElement('link');
+        customFont.href = "https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap";
+
+        customFont.type = "text/css";
+        customFont.rel = "stylesheet";
+
+        document.head.appendChild(customFont);
+    }());
+</script>
+
+    </body>
+</html>

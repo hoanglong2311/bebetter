@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Seenow on My Knowledge Blog</title>
+        <link>http://localhost:52836/tags/seenow/</link>
+        <description>Recent content in Seenow on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Tue, 04 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="http://localhost:52836/tags/seenow/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Seenow Auth Service</title>
+        <link>http://localhost:52836/post/seenow-auth-service/</link>
+        <pubDate>Tue, 04 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:52836/post/seenow-auth-service/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=92752" alt="Featured image of post Seenow Auth Service" /&gt;</description>
+        </item>
+        <item>
+        <title>Index Seenow</title>
+        <link>http://localhost:52836/post/index-seenow/</link>
+        <pubDate>Sat, 04 Jan 2025 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:52836/post/index-seenow/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=19226" alt="Featured image of post Index Seenow" /&gt;</description>
+        </item>
+        <item>
+        <title>Seenow Overview</title>
+        <link>http://localhost:52836/post/seenow-overview/</link>
+        <pubDate>Wed, 25 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:52836/post/seenow-overview/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=37696" alt="Featured image of post Seenow Overview" /&gt;</description>
+        </item>
+        <item>
+        <title>Seenow Content Service</title>
+        <link>http://localhost:52836/post/seenow-content-service/</link>
+        <pubDate>Thu, 28 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>http://localhost:52836/post/seenow-content-service/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=20846" alt="Featured image of post Seenow Content Service" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Moc on My Knowledge Blog</title>
+        <link>https://example.com/tags/moc/</link>
+        <description>Recent content in Moc on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language><atom:link href="https://example.com/tags/moc/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title></title>
+        <link>https://example.com/post/home/</link>
+        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/home/</guid>
+        <description>&lt;img src="https://source.unsplash.com/random/1600x900?cachebust=85252" alt="Featured image of post " /&gt;&lt;h1 id=&#34;welcome-to-your-backend-learning-vault-&#34;&gt;Welcome to Your Backend Learning Vault! 🚀
+&lt;/h1&gt;&lt;p&gt;This vault is your dedicated space for learning backend engineering principles, exploring technologies, and dissecting real-world codebase examples to prepare for your mid-level backend engineer interviews.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Purpose:&lt;/strong&gt; To systematically build a comprehensive knowledge base from the &lt;code&gt;cellutions&lt;/code&gt; codebase and relevant backend engineering concepts, optimized for review and interview readiness.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Navigation:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;This vault is structured using &lt;strong&gt;Maps of Content (MOCs)&lt;/strong&gt; to guide your learning journey. Each MOC acts as a central hub for a major section of your knowledge base.&lt;/p&gt;
+&lt;p&gt;Explore the main areas of your vault through these MOCs:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;[[010-Core Concepts MOC|Core Concepts]]&lt;/strong&gt;:  Dive into fundamental backend principles like distributed systems, microservices, and event-driven architectures. Build a strong theoretical foundation.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[[020-Technologies MOC|Technologies]]&lt;/strong&gt;:  Deepen your understanding of specific technologies relevant to backend engineering and the &lt;code&gt;cellutions&lt;/code&gt; stack, including Redis, Cassandra, Pulsar, Flink, Kubernetes, and Golang.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[[030-Repositories MOC|Repositories]]&lt;/strong&gt;:  Explore the &lt;code&gt;cellutions&lt;/code&gt; codebase in a structured way. Analyze individual repositories, understand their architecture, and learn from real-world code examples.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[[040-Projects MOC|Projects]]&lt;/strong&gt;:  Document your personal projects, coding exercises, and system design implementations. Practice applying your learned knowledge in practical scenarios.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[[050-Interview Prep MOC|Interview Preparation]]&lt;/strong&gt;:  Focus your efforts on interview-specific topics, including system design questions, coding challenges, and behavioral interview strategies.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;[[060-Cheat Sheets MOC|Cheat Sheets]]&lt;/strong&gt;:  Quickly access cheat sheets and reference notes for commands, syntax, and key concepts.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;&lt;strong&gt;Using the Graph View:&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Obsidian&amp;rsquo;s &lt;strong&gt;Graph View&lt;/strong&gt; is your superpower for navigating this vault!&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Open Graph View:&lt;/strong&gt;  Use &lt;code&gt;Ctrl+Shift+G&lt;/code&gt; (or &lt;code&gt;Cmd+Shift+G&lt;/code&gt; on Mac) to open the Graph View.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Observe Central Hub:&lt;/strong&gt; You should see this &lt;strong&gt;&lt;code&gt;000-Home&lt;/code&gt; note as a central node&lt;/strong&gt; in your graph. This is because it links to all the main MOC notes.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Explore Connections:&lt;/strong&gt;  Click and drag nodes in the graph to rearrange them. Hover over nodes to see note titles.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Follow the Links:&lt;/strong&gt; Click on the &lt;code&gt;000-Home&lt;/code&gt; node or any MOC node and then click on linked nodes to navigate to different sections of your knowledge base.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Identify Clusters:&lt;/strong&gt;  Notice how notes related to specific topics (e.g., Redis, Microservices, a particular repository) form clusters in the graph. This visually represents related concepts.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Use Filters (Optional):&lt;/strong&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Tags:&lt;/strong&gt; If you&amp;rsquo;ve used tags (e.g., &lt;code&gt;#redis&lt;/code&gt;, &lt;code&gt;#microservice&lt;/code&gt;), you can filter the graph view to only show notes with specific tags.  This can help focus on particular technology areas.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Path:&lt;/strong&gt; Filter by path to focus on notes within a specific folder (e.g., &lt;code&gt;20-Technologies/Redis/&lt;/code&gt;).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;&lt;strong&gt;Start Your Learning Journey!&lt;/strong&gt;&lt;/p&gt;
+&lt;p&gt;Begin by exploring the &lt;strong&gt;[[010-Core Concepts MOC|Core Concepts MOC]]&lt;/strong&gt; and then branch out to &lt;strong&gt;[[020-Technologies MOC|Technologies MOC]]&lt;/strong&gt; and &lt;strong&gt;[[030-Repositories MOC|Repositories MOC]]&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;Happy Learning and Good Luck with your Interview Prep! 🚀&lt;/p&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>

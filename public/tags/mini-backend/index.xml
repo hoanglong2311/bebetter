@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>Mini Backend on My Knowledge Blog</title>
+        <link>https://example.com/tags/mini-backend/</link>
+        <description>Recent content in Mini Backend on My Knowledge Blog</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>en-us</language>
+        <lastBuildDate>Sat, 29 Mar 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://example.com/tags/mini-backend/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>Index Mini Backend</title>
+        <link>https://example.com/post/index-mini-backend/</link>
+        <pubDate>Sat, 29 Mar 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/index-mini-backend/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1743062545929-0135b193c968?q=80&amp;w=1645&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Index Mini Backend" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Challenges</title>
+        <link>https://example.com/post/mini-backend-challenges/</link>
+        <pubDate>Mon, 03 Feb 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-challenges/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1713281887952-e0b08e526f90?q=80&amp;w=1586&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Challenges" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Design</title>
+        <link>https://example.com/post/mini-backend-design/</link>
+        <pubDate>Sat, 07 Dec 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-design/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1709339069106-fd6e43fe7b33?q=80&amp;w=1632&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Design" /&gt;</description>
+        </item>
+        <item>
+        <title>Mini Backend Implementation</title>
+        <link>https://example.com/post/mini-backend-implementation/</link>
+        <pubDate>Sat, 16 Nov 2024 00:00:00 +0000</pubDate>
+        
+        <guid>https://example.com/post/mini-backend-implementation/</guid>
+        <description>&lt;img src="https://images.unsplash.com/photo-1577650821816-936bfa0b9504?q=80&amp;w=1740&amp;auto=format&amp;fit=crop&amp;ixlib=rb-4.0.3&amp;ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Featured image of post Mini Backend Implementation" /&gt;</description>
+        </item>
+        
+    </channel>
+</rss>
